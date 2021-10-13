@@ -1,108 +1,305 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Buon Appetito Website
 
-Welcome VictoriaShalabaeva,
+View the live project [Here](#)
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+*Buon Appetito* is an interactive website that .
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+The website is designed to be responsive and accessible on a range of devices, making it easy to navigate through.
 
-## Gitpod Reminders
+![Responsive Design](static/images/responsive-design.jpg)
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+## User Experience (UX)
 
-`python3 -m http.server`
+### User stories
 
-A blue button should appear to click: _Make Public_,
+  - **As a user:**
 
-Another blue button should appear to click: _Open Browser_.
+    - I want to see 
+      
+### Design
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+  - **Colour Scheme**
 
-A blue button should appear to click: _Make Public_,
+    The main colours used are ....
 
-Another blue button should appear to click: _Open Browser_.
+  - **Typography**
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+    The Roboto and Yanone Kaffeesatz (Navbar heading) fonts are the main fonts used throughout the whole website with Sans Serif as the fallback font in case for any reason the font isn't being imported into the site correctly. Roboto is a clean font used frequently in programming, so it is both attractive and appropriate.
 
-To log into the Heroku toolbelt CLI:
+  - **Imagery**
+     
+    The large background images are designed to be striking and catch the user's attention demonstrating...
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+### Wireframes
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+  - *Home* page - [View](assets/pdf/home-page.pdf)
 
-------
+  - 
 
-## Release History
+## Features
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+### Existing Features
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+- The website is responsive on many device sizes (down to 280 px).
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+- The *Home* page:
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+  - contains an appealing background image and a Bootstap jumbotron-style component that catch the user's attention. 
+  
+ 
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+### Features Left to Implement
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+- a *Search Bar* through which a user can search content of their concern within the website.
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+## Technologies Used
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+### Languages Used
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+- HTML5
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+- CSS3
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+- JavaScript
 
-------
+### Frameworks, Libraries & Programs Used
 
-## FAQ about the uptime script
+1. [Bootstrap 4.1.3:](https://getbootstrap.com/docs/4.1/getting-started/introduction/)
 
-**Why have you added this script?**
+   Grid System to make the site responsive,
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+   Navbar to make a responsive navigation header,
 
-**How will this affect me?**
+   Jumbotron-style component for calling extra attention to featured content or information.
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+2. [Google Maps JavaScript API:](https://developers.google.com/maps/documentation/javascript/overview)   
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+   Google Maps JavaScript API was used to integrate an interactive Google map with built in features such as markers and info windows to provide additional information.
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+3. [EmailJS:](https://www.emailjs.com/)
 
-**So….?**
+   EmailJS was used to connects the contact form to an email service.
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+4. [OpenWeather API:](https://openweathermap.org/api)
 
-**Can I opt out?**
+   OpenWeather API was used to display a current weather in Moscow.
+   
+5. [Google Fonts:](https://fonts.google.com/)
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+   Google fonts Roboto and Yanone Kaffeesatz were used on all pages throughout the project.
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+6. [jQuery:](https://jquery.com/)
 
-**Anything more?**
+   jQuery was used in JavaScript codes for the media query and detection of iOS devices; within Bootstrap to make the navbar responsive.
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+7. [Git:](https://git-scm.com/)
 
----
+   Git was used for version control. 
 
-Happy coding!
+8. [GitPod:](https://www.gitpod.io/)
+
+   GitPod was used as an IDE platform for website realization.
+
+9. [GitHub:](https://github.com/)
+
+   GitHub is used to store the project code after being pushed from GitPod.
+
+10. [Balsamiq:](https://balsamiq.com/)
+
+    Balsamiq was used to create wireframes during the design process.
+
+11. [Squoosh:](https://squoosh.app/editor)
+
+    Squoosh image editor was used to reduces file size of the images.
+
+12. [Am I responsive?](http://ami.responsivedesign.is/)
+
+    Am I responsive? was used to show how the website looks on different devices.
+
+13. [AutoPrefixer:](https://autoprefixer.github.io/)
+
+    AutoPrefixer was used to add vendor prefixes to a CSS code.
+
+14. [Beautifier:](https://beautifier.io/) 
+
+    Beautifier was used to format code in a consistent and readable way.
+
+15. [W3C Markup Validator](https://validator.w3.org/)
+
+    W3C Markup Validator was used to check the markup validity of Web documents in HTML.
+
+16. [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)
+ 
+    W3C CSS Validator was used to check the markup validity of Web documents in CSS.
+
+17. [JSHint](https://jshint.com/)
+
+    JSHint was used to detect errors and potential problems in JavaScript code.
+
+18. [Chrome DevTools](https://developer.chrome.com/docs/devtools/)
+
+    Chrome DevTools was used to inspect and modify the website code.
+
+19. [Lighthouse](https://developers.google.com/web/tools/lighthouse)
+
+    Lighthouse was used to assess performance, accessibility, SEO and best practices.
+
+## Testing
+
+The W3C Markup Validator, W3C CSS Validator and JSHint Services were used to validate HTML, CSS and JS code, respectively, to ensure no syntax error.
+
+- [W3C Markup Validator](https://validator.w3.org/). Please see Figure S1 in [Supp Info](supp-info.md) for the results.
+- [W3C CSS Validator](https://jigsaw.w3.org/css-validator/). Please see Figure S2 in [Supp Info](supp-info.md) for the results.
+- [JSHint](https://jshint.com/) did not detect any potential problem in JavaScript codes.
+
+### Testing User Stories from User Experience (UX) Section
+
+Please see [Here](testing_user_stories.md) to find the user stories testing with corresponding screenshots.
+
+### Testing Functionality, Usability and Responsiveness
+
+The manual testing is described [Here](manual-testing.md).
+
+### Further Testing
+
+- The website was checked for performance in [Lighthouse](https://developers.google.com/web/tools/lighthouse) in Chrome DevTools (see results in Figure S3 in [Supp Info](supp-info.md)).
+
+- The Website was tested on Google Chrome, Mozilla Firefox and Microsoft Edge browsers.
+
+- The screen sizes and devices tested in Chrome DevTools include:
+
+    - 1920 x 1080 
+    - 1600 x 992
+    - 1440 x 900
+    - 1366 x 768
+    - 1280 x 800
+    - Nexus 10 (800 x 1280)
+    - iPad (768 x 1024)
+    - Surface Duo (540 x 720)
+    - iPhone 6/7/8 Plus (414 x 736)
+    - Pixel 2 (411 x 731)
+    - iPhone 6/7/8 (375 x 667)
+    - Nexus 4 (384 x 640)
+    - iPhone X (375 x 812)
+    - Galaxy S5 (360 x 640)
+    - iPhone 5/SE (320 x 568)
+    - Galaxy Fold (280 x 653)
+
+- Devices physically tested include:
+
+  - Desktop 
+  - Laptop
+  - iPhoneXR 
+  - Huawei Mate 20 
+    
+### Bugs
+
+#### Fixed bugs
+
+1. 
+
+#### Existing bugs
+
+1. 
+        
+## Deployment
+
+### GitHub Pages
+
+The project was deployed to GitHub Pages using the following steps:
+
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/).
+
+2. At the top of the Repository (not top of page), locate the "Settings" Button on the menu.
+
+3. Scroll down the Settings page until you locate the "GitHub Pages" Section.
+    
+4. Under "Source", click the dropdown called "None" and select "Master Branch".
+    
+5. The page will automatically refresh.
+    
+6. Scroll back down through the page to locate the now published site link in the "GitHub Pages" section.
+
+### Forking the GitHub Repository
+
+By forking the GitHub Repository we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original repository by using the following steps:
+
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/).
+    
+2. At the top of the Repository (not top of page) just above the "Settings" Button on the menu, locate the "Fork" Button.
+
+3. You should now have a copy of the original repository in your GitHub account.
+
+### Making a Local Clone
+
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/).
+    
+2. Under the repository name, click "Clone or download".
+    
+3. To clone the repository using HTTPS, under "Clone with HTTPS", copy the link.
+    
+4. Open Git Bash.
+    
+5. Change the current working directory to the location where you want the cloned directory to be made.
+    
+6. Type `git clone`, and then paste the URL you copied in Step 3.
+
+    ```
+    $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+    ```
+
+7. Press Enter. Your local clone will be created.
+
+   ```
+   $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+   > Cloning into `CI-Clone`...
+   > remote: Counting objects: 10, done.
+   > remote: Compressing objects: 100% (8/8), done.
+   > remove: Total 10 (delta 1), reused 10 (delta 1)
+   > Unpacking objects: 100% (10/10), done.
+
+Click [Here](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository#cloning-a-repository-to-github-desktop) to retrieve pictures for some of the buttons and more detailed explanations of the above process.
+
+
+
+## Credits
+
+### Content
+
+#### Images
+
+- Favicon image from [Iconduck](https://iconduck.com/icons/114143/moscow)
+
+- Background image on *Home* page from 
+
+- Background image on 
+
+- Background image on 
+
+
+
+#### Text
+
+- Text content on *Home* page was taken from 
+
+- The present README file was written following the [template](https://github.com/Code-Institute-Solutions/SampleREADME) provided by Code Institute. Some parts (like Deployment section) were copied and pasted as they describe exactly the same procedure that was employed for the realization of this project.
+
+### Code
+
+- 
+
+- Approach to identify 
+
+- Approach to change 
+
+- Approach to align 
+
+### Acknowledgements
+
+- My mentor Sandeep Aggarwal for continuous helpful feedback.
+
+- Tutor support at Code Institute for their help and support.
