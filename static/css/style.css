@@ -1,3 +1,22 @@
 .flashes h4 {
     line-height: 2;
 }
+
+body {
+    background-image: url(../images/italian-food.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.brand-logo {
+    margin-left: 20px;
+}
+
+.jumbotron-card {
+    background-color:rgba(60, 60, 60, 0.6);
+    color: white;
+}
