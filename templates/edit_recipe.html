@@ -1,0 +1,77 @@
+{% extends "base.html" %}
+{% block content %}
+
+    <h3 class="light-blue-text text-darken-4 center-align">Edit Recipe</h3>
+
+    <div class="row card-panel grey lighten-5">
+        <form class="col s12" method="POST" action="{{ url_for('edit_recipe', recipe_id=recipe._id) }}">
+            <!-- category selection -->
+            <div class="row">
+				<div class="input-field col s12">
+                    <i class="fas fa-folder-open prefix light-blue-text text-darken-4"></i>
+					<select id="category_name" name="category_name" class="validate" required>
+                        <option value="" disabled selected>Choose Category</option>
+                        {% for category in categories %}
+                            <option value="{{ category.category_name }}">{{ category.category_name }}</option>
+                        {% endfor %}
+                    </select>
+					<label for="category_name">Category</label>
+				</div>
+			</div>
+            <!-- recipe name -->
+            <div class="row">
+                <div class="input-field col s12">
+                    <i class="fas fa-solid fa-pizza-slice prefix light-blue-text text-darken-4"></i>
+                    <input id="recipe_name" name="recipe_name" minlength="5" maxlength="50"
+                        type="text" class="validate" required>
+                    <label for="recipe_name">Recipe Name</label>
+                </div>
+            </div>
+            <!-- time -->
+            <div class="row">
+                <div class="input-field col s12">
+                    <i class="fas fa-solid fa-hourglass-start prefix light-blue-text text-darken-4"></i>
+                    <input id="time" name="time" minlength="5" maxlength="50"
+                        type="text" class="validate" required>
+                    <label for="time">Time</label>
+                </div>
+            </div>
+            <!-- servings -->
+            <div class="row">
+                <div class="input-field col s12">
+                    <i class="fas fa-solid fa-person prefix light-blue-text text-darken-4"></i>
+                    <input id="servings" name="servings" minlength="5" maxlength="50"
+                        type="text" class="validate" required>
+                    <label for="servings">Servings</label>
+                </div>
+            </div>
+            <!-- ingredients -->
+            <div class="row">
+                <div class="input-field col s12">
+                    <i class="fas fa-solid fa-carrot prefix light-blue-text text-darken-4"></i>
+                    <textarea id="ingredients" name="ingredients" minlength="5"
+                        maxlength="200" class="materialize-textarea validate" required></textarea>
+                    <label for="ingredients">Ingredients</label>
+                </div>
+            </div>
+            <!-- preparation -->
+            <div class="row">
+                <div class="input-field col s12">
+                    <i class="fas fa-align-left prefix light-blue-text text-darken-4"></i>
+                    <textarea id="preparation" name="preparation" minlength="5"
+                        maxlength="200" class="materialize-textarea validate" required></textarea>
+                    <label for="preparation">Preparation</label>
+                </div>
+            </div>
+            <!-- submit button -->
+            <div class="row">
+                <div class="col s12 center-align">
+                    <button type="submit" class="btn-large light-blue darken-1 text-shadow">
+                        Edit Recipe <i class="fas fa-edit right"></i>
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+{% endblock %}
