@@ -10,13 +10,34 @@ body {
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
+    font-family: "Roboto", sans-serif;
 }
 
-.brand-logo {
+/*------------------ Navbar */
+
+nav .brand-logo {
     margin-left: 20px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+/*--------------- card on home page */
+
+.container {
+    height: 80vh;
+}
+
+.card-title h1 {
+    font-family: 'Dancing Script', cursive;
 }
 
 .jumbotron-card {
-    background-color:rgba(60, 60, 60, 0.6);
+    background-color:rgba(40, 40, 40, 0.4);
     color: white;
+}
+
+.italic {
+    font-family: 'Dancing Script', cursive;
+    font-size: 19px;
 }

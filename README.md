@@ -274,9 +274,9 @@ Click [Here](https://docs.github.com/en/github/creating-cloning-and-archiving-re
 
 - Favicon image from [Iconduck](https://iconduck.com/icons/114143/moscow)
 
-- Background image on *Home* page from 
+- Background image on *Home* page from [Unsplash](https://unsplash.com/photos/40OJLYVWeeM)
 
-- Background image on 
+- Bucatini all'Amatriciana image from [Paesana](https://www.paesana.com/family-recipes/bucatini-allamatriciana)
 
 - Background image on 
 
