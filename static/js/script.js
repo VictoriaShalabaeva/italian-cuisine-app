@@ -30,3 +30,5 @@ $(document).ready(function(){
         });
     }
 });
+
+$("#copyright").text(new Date().getFullYear()); // gets the current year automatically

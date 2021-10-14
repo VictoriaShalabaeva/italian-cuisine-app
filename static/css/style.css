@@ -41,3 +41,35 @@ nav .brand-logo {
     font-family: 'Dancing Script', cursive;
     font-size: 19px;
 }
+
+/* ----------------------------------------------Footer */
+
+.footer {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 13px;
+    background-color: #494947;
+    color: #ffffff;
+    display: block;
+    background-color: rgba(12, 12, 12, 0.7);
+}
+
+.footer-fixed {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin-bottom: 0;
+}
+
+@media screen and (max-height: 500px) {
+    .footer {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
+@media screen and (max-width: 330px) {
+    .footer {
+        padding-top: 5px;
+        padding-bottom: 9px;
+    }
+}
