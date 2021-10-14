@@ -276,15 +276,26 @@ Click [Here](https://docs.github.com/en/github/creating-cloning-and-archiving-re
 
 - Background image on *Home* page from [Unsplash](https://unsplash.com/photos/40OJLYVWeeM)
 
-- Bucatini all'Amatriciana image from [Paesana](https://www.paesana.com/family-recipes/bucatini-allamatriciana)
+- Bucatini all'Amatriciana image from [BigOven](https://www.bigoven.com/recipe/bucatini-allamatriciana/2435565)
 
-- Background image on 
+- Spaghetti alla carbonara image from [Recepten.be](https://recepten.be/recept/authentieke-spaghetti-carbonara/)
+
+- Pizza Margherita image from [Indoindians](https://www.indoindians.com/so-simple-and-so-good-pizza-margherita/)
+
+- Tiramisu image from [La Rosiere](https://www.larosiere.net/tiramisu-recette/)
 
 
 
-#### Text
+#### Recipes
 
-- Text content on *Home* page was taken from 
+- Bucatini all'Amatriciana recipe was taken from [Bon Appétit](https://www.bonappetit.com/recipe/bucatini-all-amatriciana-2)
+
+- Spaghetti alla carbonara recipe was taken from [Food Network](https://foodnetwork.co.uk/recipes/spaghetti-alla-carbonara/?utm_source=foodnetwork.com&utm_medium=domestic)
+
+- Pizza Margherita recipe were taken from [Cooking](https://cooking.nytimes.com/recipes/1014332-pizza-margherita)
+
+- Tiramisu recipe was taken from [Cooking](https://cooking.nytimes.com/recipes/1018684-classic-tiramisu)
+
 
 - The present README file was written following the [template](https://github.com/Code-Institute-Solutions/SampleREADME) provided by Code Institute. Some parts (like Deployment section) were copied and pasted as they describe exactly the same procedure that was employed for the realization of this project.
 
