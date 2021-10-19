@@ -122,6 +122,7 @@ def add_new_recipe():
         recipe = {
             "category_name": request.form.get("category_name"),
             "recipe_name": request.form.get("recipe_name"),
+            "image_url": request.form.get("image_url"),
             "time": request.form.get("time"),
             "servings": request.form.get("servings"),
             "ingredients": request.form.get("ingredients").splitlines(),
@@ -142,10 +143,11 @@ def edit_recipe(recipe_id):
         submit = {
             "category_name": request.form.get("category_name"),
             "recipe_name": request.form.get("recipe_name"),
+            "image_url": request.form.get("image_url"),
             "time": request.form.get("time"),
             "servings": request.form.get("servings"),
-            "ingredients": request.form.get("ingredients"),
-            "preparation": request.form.get("preparation"),
+            "ingredients": request.form.get("ingredients").splitlines(),
+            "preparation": request.form.get("preparation").splitlines(),
             "created_by": session["user"]
         }
         mongo.db.recipes.update({"_id": ObjectId(recipe_id)}, submit)
