@@ -86,3 +86,13 @@ nav .brand-logo {
     font-family: 'Courgette', cursive;
 }
 
+/* -----------------------------Login page */
+
+.login-card {
+    background-color:rgba(40, 40, 40, 0.6);
+    color: white;
+}
+
+.new-here {
+    margin-bottom: 0;
+}
