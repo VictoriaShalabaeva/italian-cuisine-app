@@ -294,7 +294,7 @@ Click [Here](https://docs.github.com/en/github/creating-cloning-and-archiving-re
 
 - Pizza Margherita recipe were taken from [Cooking](https://cooking.nytimes.com/recipes/1014332-pizza-margherita)
 
-- Tiramisu recipe was taken from [Cooking](https://cooking.nytimes.com/recipes/1018684-classic-tiramisu)
+- Tiramisu recipe was taken from [AllRecipes](https://www.allrecipes.com/recipe/21412/tiramisu-ii/)
 
 
 - The present README file was written following the [template](https://github.com/Code-Institute-Solutions/SampleREADME) provided by Code Institute. Some parts (like Deployment section) were copied and pasted as they describe exactly the same procedure that was employed for the realization of this project.
