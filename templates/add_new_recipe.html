@@ -1,14 +1,14 @@
 {% extends "base.html" %}
 {% block content %}
 
-    <h3 class="light-blue-text text-darken-4 center-align">Add New Recipe</h3>
+    <h3 class="white-text center-align title">Add New Recipe</h3>
 
     <div class="row card-panel grey lighten-5">
         <form class="col s12" method="POST" action="{{ url_for('add_new_recipe') }}">
             <!-- category selection -->
             <div class="row">
 				<div class="input-field col s12">
-                    <i class="fas fa-folder-open prefix light-blue-text text-darken-4"></i>
+                    <i class="fas fa-folder-open prefix red-text text-darken-4"></i>
 					<select id="category_name" name="category_name" class="validate" required>
                         <option value="" disabled selected>Choose Category</option>
                         {% for category in categories %}
@@ -21,7 +21,7 @@
             <!-- recipe name -->
             <div class="row">
                 <div class="input-field col s12">
-                    <i class="fas fa-solid fa-pizza-slice prefix light-blue-text text-darken-4"></i>
+                    <i class="fas fa-solid fa-pizza-slice prefix red-text text-darken-4"></i>
                     <input id="recipe_name" name="recipe_name" minlength="5" maxlength="50"
                         type="text" class="validate" required>
                     <label for="recipe_name">Recipe Name</label>
@@ -30,7 +30,7 @@
             <!-- time -->
             <div class="row">
                 <div class="input-field col s12">
-                    <i class="fas fa-solid fa-hourglass-start prefix light-blue-text text-darken-4"></i>
+                    <i class="fas fa-solid fa-hourglass-start prefix red-text text-darken-4"></i>
                     <input id="time" name="time" minlength="5" maxlength="50"
                         type="text" class="validate" required>
                     <label for="time">Time</label>
@@ -39,7 +39,7 @@
             <!-- servings -->
             <div class="row">
                 <div class="input-field col s12">
-                    <i class="fas fa-solid fa-person prefix light-blue-text text-darken-4"></i>
+                    <i class="fas fa-solid fa-person prefix red-text text-darken-4"></i>
                     <input id="servings" name="servings" minlength="5" maxlength="50"
                         type="text" class="validate" required>
                     <label for="servings">Servings</label>
@@ -48,7 +48,7 @@
             <!-- ingredients -->
             <div class="row">
                 <div class="input-field col s12">
-                    <i class="fas fa-solid fa-carrot prefix light-blue-text text-darken-4"></i>
+                    <i class="fas fa-solid fa-carrot prefix red-text text-darken-4"></i>
                     <textarea id="ingredients" name="ingredients" minlength="5"
                         maxlength="200" class="materialize-textarea validate" required></textarea>
                     <label for="ingredients">Ingredients</label>
@@ -57,7 +57,7 @@
             <!-- preparation -->
             <div class="row">
                 <div class="input-field col s12">
-                    <i class="fas fa-align-left prefix light-blue-text text-darken-4"></i>
+                    <i class="fas fa-align-left prefix red-text text-darken-4"></i>
                     <textarea id="preparation" name="preparation" minlength="5"
                         maxlength="200" class="materialize-textarea validate" required></textarea>
                     <label for="preparation">Preparation</label>
@@ -66,7 +66,7 @@
             <!-- submit button -->
             <div class="row">
                 <div class="col s12 center-align">
-                    <button type="submit" class="btn-large light-blue darken-1 text-shadow">
+                    <button type="submit" class="btn-large red darken-4 text-shadow">
                         Add Recipe <i class="fas fa-plus-square right"></i>
                     </button>
                 </div>
