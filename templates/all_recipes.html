@@ -1,21 +1,21 @@
 {% extends "base.html" %}
 {% block content %}
 
-    <h3 class="light-blue-text text-darken-4 center-align">All Recipes</h3>
+    <h3 class="white-text center-align title">All Recipes</h3>
 
-    <div class="row card-panel grey lighten-5">
+    <div class="row card-panel jumbotron-card">
         <form action="{{ url_for('search') }}" method="post" class="col s12">
             <div class="row valign-wrapper center-align">
                 <div class="input-field col s12 m8">
-                    <i class="fas fa-search prefix light-blue-text text-darken-4"></i>
+                    <i class="fas fa-search prefix grey-text text-lighten-1"></i>
                     <input type="text" name="query" id="query" minlength="3" class="validate" required>
                     <label for="query">Search Recipes</label>
                 </div>
                 <div class="col s12 m4">
-                    <a href="{{ url_for('get_recipes') }}" class="red btn text-shadow">Reset</a>
-                    <button type="submit" class="light-blue darken-1 btn text-shadow">
+                    <button type="submit" class="white-text grey darken-3 waves-effect waves-light btn">
                         <i class="fas fa-search left"></i> Search
                     </button>
+                    <a href="{{ url_for('get_recipes') }}" class="white-text orange darken-4 waves-effect waves-light btn">Reset</a>
                 </div>
             </div>
         </form>
@@ -25,12 +25,14 @@
     <div class="row">
         {% for recipe in recipes %}
         <div class="col s12 m6 l4">
-            <div class="card small">
+            <div class="card small recipe-card">
                 <div class="card-image waves-effect waves-block waves-light">
                     <img class="activator" src="{{ recipe.image_url }}">
                 </div>
                 <div class="card-content">
-                    <span class="card-title activator grey-text text-darken-4">{{ recipe.recipe_name }}<i class="material-icons right">more_vert</i></span>
+                    <span class="card-title activator grey-text text-lighten-3">
+                        {{ recipe.recipe_name }}
+                    </span>
                     {% if session.user|lower == recipe.created_by|lower %}
                         <p>
                             <a href="{{ url_for('edit_recipe', recipe_id=recipe._id) }}" class="waves-effect waves-light btn"><i class="material-icons left">edit</i></a>
@@ -43,19 +45,19 @@
                         {{ recipe.recipe_name }}<i class="material-icons right">close</i>
                     </span>
                     <p>
-                        <i class="fas fa-folder-open prefix light-blue-text text-darken-4"></i> 
+                        <i class="fas fa-folder-open prefix red-text text-darken-4"></i> 
                         <b>Category:</b> {{ recipe.category_name }}
                     </p>
                     <p>
-                        <i class="fas fa-solid fa-hourglass-start prefix light-blue-text text-darken-4"></i> 
+                        <i class="fas fa-solid fa-hourglass-start prefix red-text text-darken-4"></i> 
                         <b>Time:</b> {{ recipe.time }}
                     </p>
                     <p>
-                        <i class="fas fa-solid fa-person prefix light-blue-text text-darken-4"></i> 
+                        <i class="fas fa-solid fa-person prefix red-text text-darken-4"></i> 
                         <b>Servings:</b> {{ recipe.servings }}
                     </p>
                     <p>
-                        <i class="fas fa-solid fa-carrot prefix light-blue-text text-darken-4"></i> 
+                        <i class="fas fa-solid fa-carrot prefix red-text text-darken-4"></i> 
                         <b>Ingredients:</b>
                     </p>
                     <ul>
@@ -66,7 +68,7 @@
                         {% endfor %}
                     </ul>
                     <p>
-                        <i class="fas fa-align-left prefix light-blue-text text-darken-4"></i> <b>Preparation:</b> 
+                        <i class="fas fa-align-left prefix red-text text-darken-4"></i> <b>Preparation:</b> 
                     </p>
                     <ul>
                         {% for step in recipe.preparation %}

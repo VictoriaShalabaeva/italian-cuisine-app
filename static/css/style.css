@@ -73,3 +73,16 @@ nav .brand-logo {
         padding-bottom: 9px;
     }
 }
+
+/* -----------------------------All recipes page */
+
+.recipe-card {
+    background-color:rgba(40, 40, 40, 0.8);
+}
+
+.title {
+    margin-bottom: 40px;
+    margin-top: 40px;
+    font-family: 'Courgette', cursive;
+}
+
