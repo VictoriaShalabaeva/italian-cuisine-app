@@ -96,9 +96,16 @@ def profile(username):
         {"username": session["user"]})["username"]
 
     if session["user"]:
-        return render_template("profile.html", username=username)
-
-    return redirect(url_for("login"))
+        # display all recipies added by that user
+        user = mongo.db.users.find_one({"username": session['user']})
+        recipes = mongo.db.recipes.find({"created_by": session['user']})
+        recipes = list(recipes)
+        return render_template(
+                "profile.html",
+                username=username,
+                recipes=recipes)
+    else:
+        return redirect(url_for("login"))
 
 
 @app.route("/logout")
