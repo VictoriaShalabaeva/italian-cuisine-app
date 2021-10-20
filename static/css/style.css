@@ -169,6 +169,10 @@ nav .brand-logo {
     .card .card-title {
         font-size: 18px;
     }
+    .title {
+        margin-top: 10px;
+        font-size: 32px;
+    }
 }
 
 @media screen and (max-width: 290px) {
@@ -266,6 +270,30 @@ textarea.materialize-textarea {
     background-color: rgba(40, 40, 40);
 }
 
+@media screen and (max-width: 500px) {
+    .input-field .helper-text,
+    .dropdown-content li>a, .dropdown-content li>span,
+    .select-wrapper input.select-dropdown,
+    textarea.materialize-textarea,
+    .select-dropdown li.disabled, 
+    .select-dropdown li.disabled>span, 
+    .select-dropdown li.optgroup,
+    input:not([type]), 
+    input[type=text]:not(.browser-default), 
+    input[type=password]:not(.browser-default), 
+    input[type=email]:not(.browser-default), 
+    input[type=url]:not(.browser-default), 
+    input[type=time]:not(.browser-default), 
+    input[type=date]:not(.browser-default), 
+    input[type=datetime]:not(.browser-default), 
+    input[type=datetime-local]:not(.browser-default), 
+    input[type=tel]:not(.browser-default), 
+    input[type=number]:not(.browser-default), 
+    input[type=search]:not(.browser-default), 
+    textarea.materialize-textarea {
+        font-size: 14px;
+    }
+}    
 
 
 
