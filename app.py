@@ -151,6 +151,7 @@ def edit_recipe(recipe_id):
         }
         mongo.db.recipes.update({"_id": ObjectId(recipe_id)}, submit)
         flash("Recipe Successfully Updated")
+        return redirect(url_for("profile", username=session["user"]))
 
 
     recipe = mongo.db.recipes.find_one({"_id": ObjectId(recipe_id)})
