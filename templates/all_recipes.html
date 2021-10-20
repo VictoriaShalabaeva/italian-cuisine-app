@@ -1,9 +1,10 @@
 {% extends "base.html" %}
 {% block content %}
 
-    <h3 class="white-text center-align title">All Recipes</h3>
+    
 
-    <div class="row card-panel jumbotron-card">
+    <div class="row card-panel jumbotron-card card-margin-top">
+        <h3 class="white-text center-align title">All Recipes</h3>
         <form action="{{ url_for('search') }}" method="post" class="col s12">
             <div class="row valign-wrapper center-align">
                 <div class="input-field col s12 m8">
@@ -19,9 +20,7 @@
                 </div>
             </div>
         </form>
-    </div>
-
-    {% if recipes|length > 0 %}   
+        {% if recipes|length > 0 %}   
     <div class="row">
         {% for recipe in recipes %}
         <div class="col s12 m6 l4">
@@ -94,5 +93,8 @@
     {% else %}
     <h3 class="red-text text-darken-4 center-align">No Results Found</h3>
     {% endif %}
+    </div>
+
+    
 
 {% endblock %}

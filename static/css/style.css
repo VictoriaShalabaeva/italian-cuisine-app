@@ -34,7 +34,6 @@ nav .brand-logo {
 
 .jumbotron-card {
     background-color:rgba(40, 40, 40, 0.4);
-    color: white;
 }
 
 .italic {
@@ -84,6 +83,10 @@ nav .brand-logo {
     margin-bottom: 40px;
     margin-top: 40px;
     font-family: 'Courgette', cursive;
+}
+
+.card-margin-top {
+    margin-top: 70px;
 }
 
 /* -----------------------------Login page */
