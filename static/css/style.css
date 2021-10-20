@@ -99,6 +99,10 @@ nav .brand-logo {
     margin-top: 70px;
 }
 
+.card-margin-bottom {
+    margin-bottom: 50px;
+}
+
 /* -----------------------------Login page */
 
 .login-card {
@@ -167,7 +171,20 @@ nav .brand-logo {
 textarea.materialize-textarea,
 .select-dropdown li.disabled, 
 .select-dropdown li.disabled>span, 
-.select-dropdown li.optgroup {
+.select-dropdown li.optgroup,
+input:not([type]), 
+input[type=text]:not(.browser-default), 
+input[type=password]:not(.browser-default), 
+input[type=email]:not(.browser-default), 
+input[type=url]:not(.browser-default), 
+input[type=time]:not(.browser-default), 
+input[type=date]:not(.browser-default), 
+input[type=datetime]:not(.browser-default), 
+input[type=datetime-local]:not(.browser-default), 
+input[type=tel]:not(.browser-default), 
+input[type=number]:not(.browser-default), 
+input[type=search]:not(.browser-default), 
+textarea.materialize-textarea {
     color: #e0e0e0;
 }
 
@@ -175,8 +192,7 @@ textarea.materialize-textarea,
     background-color: rgba(40, 40, 40);
 }
 
-input#username.validate.valid {
-    background-color: rgba(40, 40, 40);
-}
+
+
 
 
