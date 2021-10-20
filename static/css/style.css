@@ -24,12 +24,6 @@ main {
     margin-bottom: 0;
 }
 
-@media screen and (max-width: 500px) {
-    .flashes h4 {
-        font-size: 24px;
-    }
-}
-
 /*------------------- Navbar */
 
 nav .brand-logo {
@@ -300,21 +294,6 @@ textarea.materialize-textarea {
         font-size: 14px;
     }
 }    
-
-/* ----------------------Buttons */
-@media screen and (max-width: 500px){
-    .btn-large {
-        height: 40px;
-        line-height: 40px;
-        font-size: 13px;
-        padding: 0 12px;
-    }
-    .btn {
-        font-size: 13px;
-        padding: 0 12px;
-    }
-    
-}
 
 
 
