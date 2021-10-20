@@ -1,14 +1,14 @@
 {% extends "base.html" %}
 {% block content %}
 
-    <h3 class="white-text center-align title">Add New Recipe</h3>
 
-    <div class="row card-panel grey lighten-5">
+    <div class="row card-panel jumbotron-card card-margin-top card-width">
+        <h3 class="white-text center-align title">Add New Recipe</h3>
         <form class="col s12" method="POST" action="{{ url_for('add_new_recipe') }}">
             <!-- category selection -->
             <div class="row">
 				<div class="input-field col s12">
-                    <i class="fas fa-folder-open prefix red-text text-darken-4"></i>
+                    <i class="fas fa-folder-open prefix grey-text text-lighten-2"></i>
 					<select id="category_name" name="category_name" class="validate" required>
                         <option value="" disabled selected>Choose Category</option>
                         {% for category in categories %}
@@ -22,7 +22,7 @@
             <!-- recipe name -->
             <div class="row">
                 <div class="input-field col s12">
-                    <i class="fas fa-solid fa-pizza-slice prefix red-text text-darken-4"></i>
+                    <i class="fas fa-solid fa-pizza-slice prefix grey-text text-lighten-2"></i>
                     <input id="recipe_name" name="recipe_name" minlength="3" maxlength="50"
                         type="text" class="validate" required>
                     <label for="recipe_name">Recipe Name</label>
@@ -32,7 +32,7 @@
             <!-- image url -->
             <div class="row">
                 <div class="input-field col s12">
-                    <i class="fas fa-images prefix red-text text-darken-4"></i>
+                    <i class="fas fa-images prefix grey-text text-lighten-2"></i>
                     <input id="image_url" name="image_url" minlength="6" type="url" class="validate" required>
                     <label for="image_url">Image URL</label>
                     <span class="helper-text" data-error="Please provide a valid image URL" data-success="Great!">Please find an image of your choice
@@ -42,7 +42,7 @@
             <!-- time -->
             <div class="row">
                 <div class="input-field col s12">
-                    <i class="fas fa-solid fa-hourglass-start prefix red-text text-darken-4"></i>
+                    <i class="fas fa-solid fa-hourglass-start prefix grey-text text-lighten-2"></i>
                     <input id="time" name="time" maxlength="50" type="text" class="validate" required>
                     <label for="time">Time</label>
                     <span class="helper-text" data-error="Please fill out this field" data-success="Great!"></span>
@@ -51,7 +51,7 @@
             <!-- servings -->
             <div class="row">
                 <div class="input-field col s12">
-                    <i class="fas fa-solid fa-person prefix red-text text-darken-4"></i>
+                    <i class="fas fa-solid fa-person prefix grey-text text-lighten-2"></i>
                     <input id="servings" name="servings" maxlength="50" type="text" class="validate" required>
                     <label for="servings">Servings</label>
                     <span class="helper-text" data-success="Great!"></span>
@@ -60,7 +60,7 @@
             <!-- ingredients -->
             <div class="row">
                 <div class="input-field col s12">
-                    <i class="fas fa-solid fa-carrot prefix red-text text-darken-4"></i>
+                    <i class="fas fa-solid fa-carrot prefix grey-text text-lighten-2"></i>
                     <textarea id="ingredients" name="ingredients" minlength="3" class="materialize-textarea validate" required></textarea>
                     <label for="ingredients">Ingredients</label>
                     <span class="helper-text" data-error="Wrong" data-success="Great!"> Please write every ingredient on
@@ -70,7 +70,7 @@
             <!-- preparation -->
             <div class="row">
                 <div class="input-field col s12">
-                    <i class="fas fa-align-left prefix red-text text-darken-4"></i>
+                    <i class="fas fa-align-left prefix grey-text text-lighten-2"></i>
                     <textarea id="preparation" name="preparation" minlength="5" class="materialize-textarea validate" required></textarea>
                     <label for="preparation">Preparation</label>
                     <span class="helper-text" data-error="Wrong" data-success="Great!"> Please write every preparation step on a new
@@ -80,7 +80,7 @@
             <!-- submit button -->
             <div class="row">
                 <div class="col s12 center-align">
-                    <button type="submit" class="btn-large red darken-4 text-shadow">
+                    <button type="submit" class="btn-large grey-text text-lighten-2">
                         Add Recipe <i class="fas fa-plus-square right"></i>
                     </button>
                 </div>

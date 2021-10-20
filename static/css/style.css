@@ -1,16 +1,25 @@
 .flashes h4 {
     line-height: 2;
 }
+flashes {
+    margin-bottom: 0;
+}
 
 body {
     background-image: url(../images/italian-food.jpg);
     background-repeat: no-repeat;
     width: 100%;
-    height: auto;
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
     font-family: "Roboto", sans-serif;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
 }
 
 /*------------------ Navbar */
@@ -23,10 +32,6 @@ nav .brand-logo {
 }
 
 /*--------------- card on home page */
-
-.container {
-    height: 80vh;
-}
 
 .card-title h1 {
     font-family: 'Dancing Script', cursive;
@@ -43,7 +48,12 @@ nav .brand-logo {
 
 /* ----------------------------------------------Footer */
 
-.footer {
+.page-footer {
+    padding-top: 0;
+    background-color: rgba(12, 12, 12, 0.7);
+}
+
+/* .footer {
     text-align: center;
     padding-top: 10px;
     padding-bottom: 13px;
@@ -71,7 +81,7 @@ nav .brand-logo {
         padding-top: 5px;
         padding-bottom: 9px;
     }
-}
+} */
 
 /* -----------------------------All recipes page */
 
@@ -97,4 +107,16 @@ nav .brand-logo {
 
 .new-here {
     margin-bottom: 0;
+}
+
+/* -----------------------------Profile page */
+
+.add-new-recipe-btn {
+    margin-bottom: 40px;
+}
+
+/* ----------------------Add new recipe page */
+
+.card-width {
+    width: 100%;
 }

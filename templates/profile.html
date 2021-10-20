@@ -1,88 +1,84 @@
 {% extends "base.html" %}
 {% block content %}
 
-<div class="row card-panel jumbotron-card">
-<h3 class="white-text center-align title">{{ username }}'s Profile</h3>
-</div>
-
-<div class="row">
-    <div class="card-panel login-card">
-        <!-- add new recipe -->
-        <div class="row center-align">           
-            <a href="{{ url_for('add_new_recipe') }}" class="btn-large white-text grey darken-3 waves-effect waves-light">Add New Recipe</a>
-        </div>
-        <!-- my recipes -->
-        <h4 class="white-text center-align title">My recipes</h4>
-        <div class="row">
-            {% for recipe in recipes %}
-            <div class="col s12 m6 l4">
-                <div class="card small recipe-card">
-                    <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="{{ recipe.image_url }}">
-                    </div>
-                    <div class="card-content">
-                        <span class="card-title activator grey-text text-lighten-3">
-                            {{ recipe.recipe_name }}
-                        </span>
-                        {% if session.user|lower == recipe.created_by|lower %}
+    <div class="row">
+        <div class="card-panel login-card card-margin-top">
+            <h3 class="white-text center-align title">{{ username }}'s Profile</h3>
+            <!-- add new recipe -->
+            <div class="row center-align add-new-recipe-btn">           
+                <a href="{{ url_for('add_new_recipe') }}" class="btn-large white-text grey darken-3 waves-effect waves-light">Add New Recipe</a>
+            </div>
+            <!-- my recipes -->
+            <div class="row">
+                {% for recipe in recipes %}
+                <div class="col s12 m6 l4">
+                    <div class="card small recipe-card">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="{{ recipe.image_url }}">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-lighten-3">
+                                {{ recipe.recipe_name }}
+                            </span>
+                            {% if session.user|lower == recipe.created_by|lower %}
+                                <p>
+                                    <a href="{{ url_for('edit_recipe', recipe_id=recipe._id) }}" class="white-text grey darken-3 waves-effect waves-light btn"><i class="material-icons">edit</i></a>
+                                    <a href="{{ url_for('delete_recipe', recipe_id=recipe._id) }}" class="white-text grey darken-3 waves-effect waves-light btn"><i class="material-icons">delete</i></a>
+                                </p>
+                            {% endif %}
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">
+                                {{ recipe.recipe_name }}<i class="material-icons right">close</i>
+                            </span>
+                            <p>
+                                <i class="fas fa-folder-open prefix red-text text-darken-4"></i> 
+                                <b>Category:</b> {{ recipe.category_name }}
+                            </p>
+                            <p>
+                                <i class="fas fa-solid fa-hourglass-start prefix red-text text-darken-4"></i> 
+                                <b>Time:</b> {{ recipe.time }}
+                            </p>
+                            <p>
+                                <i class="fas fa-solid fa-person prefix red-text text-darken-4"></i> 
+                                <b>Servings:</b> {{ recipe.servings }}
+                            </p>
+                            <p>
+                                <i class="fas fa-solid fa-carrot prefix red-text text-darken-4"></i> 
+                                <b>Ingredients:</b>
+                            </p>
+                            <ul>
+                                {% for ingredient in recipe.ingredients %}
+                                <li>
+                                    - {{ ingredient }}
+                                </li>
+                                {% endfor %}
+                            </ul>
+                            <p>
+                                <i class="fas fa-align-left prefix red-text text-darken-4"></i> <b>Preparation:</b> 
+                            </p>
+                            <ul>
+                                {% for step in recipe.preparation %}
+                                <li>
+                                    <p>{{ step }}</p>
+                                </li>
+                                {% endfor %}
+                            </ul>
+                            <p><em>
+                                <b>Created by:</b> {{ recipe.created_by }}
+                            </em></p>
+                            {% if session.user|lower == recipe.created_by|lower %}
                             <p>
                                 <a href="{{ url_for('edit_recipe', recipe_id=recipe._id) }}" class="white-text grey darken-3 waves-effect waves-light btn"><i class="material-icons">edit</i></a>
                                 <a href="{{ url_for('delete_recipe', recipe_id=recipe._id) }}" class="white-text grey darken-3 waves-effect waves-light btn"><i class="material-icons">delete</i></a>
                             </p>
                         {% endif %}
-                    </div>
-                    <div class="card-reveal">
-                        <span class="card-title grey-text text-darken-4">
-                            {{ recipe.recipe_name }}<i class="material-icons right">close</i>
-                        </span>
-                        <p>
-                            <i class="fas fa-folder-open prefix red-text text-darken-4"></i> 
-                            <b>Category:</b> {{ recipe.category_name }}
-                        </p>
-                        <p>
-                            <i class="fas fa-solid fa-hourglass-start prefix red-text text-darken-4"></i> 
-                            <b>Time:</b> {{ recipe.time }}
-                        </p>
-                        <p>
-                            <i class="fas fa-solid fa-person prefix red-text text-darken-4"></i> 
-                            <b>Servings:</b> {{ recipe.servings }}
-                        </p>
-                        <p>
-                            <i class="fas fa-solid fa-carrot prefix red-text text-darken-4"></i> 
-                            <b>Ingredients:</b>
-                        </p>
-                        <ul>
-                            {% for ingredient in recipe.ingredients %}
-                            <li>
-                                - {{ ingredient }}
-                            </li>
-                            {% endfor %}
-                        </ul>
-                        <p>
-                            <i class="fas fa-align-left prefix red-text text-darken-4"></i> <b>Preparation:</b> 
-                        </p>
-                        <ul>
-                            {% for step in recipe.preparation %}
-                            <li>
-                                <p>{{ step }}</p>
-                            </li>
-                            {% endfor %}
-                        </ul>
-                        <p><em>
-                            <b>Created by:</b> {{ recipe.created_by }}
-                        </em></p>
-                        {% if session.user|lower == recipe.created_by|lower %}
-                        <p>
-                            <a href="{{ url_for('edit_recipe', recipe_id=recipe._id) }}" class="white-text grey darken-3 waves-effect waves-light btn"><i class="material-icons">edit</i></a>
-                            <a href="{{ url_for('delete_recipe', recipe_id=recipe._id) }}" class="white-text grey darken-3 waves-effect waves-light btn"><i class="material-icons">delete</i></a>
-                        </p>
-                    {% endif %}
+                        </div>
                     </div>
                 </div>
+                {% endfor %}
             </div>
-            {% endfor %}
         </div>
     </div>
-</div>
 
 {% endblock %}
