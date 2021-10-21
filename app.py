@@ -164,6 +164,13 @@ def delete_recipe(recipe_id):
     mongo.db.recipes.remove({"_id": ObjectId(recipe_id)})
     flash("Recipe Successfully Deleted")
     return redirect(url_for("profile", username=session["user"]))
+    
+
+# Code credit: https://flask.palletsprojects.com/en/1.1.x/patterns/errorpages/
+@app.errorhandler(404)
+def page_not_found(e):
+    # custom 404 error page
+    return render_template('404.html'), 404
 
 
 if __name__ == "__main__":
