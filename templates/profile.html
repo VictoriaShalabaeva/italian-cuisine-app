@@ -84,21 +84,23 @@
                             </em></p>
                             {% if session.user|lower == recipe.created_by|lower %}
                             <p>
+                                <!-- Edit button -->
                                 <a href="{{ url_for('edit_recipe', recipe_id=recipe._id) }}" class="white-text grey darken-3 waves-effect waves-light btn"><i class="material-icons">edit</i></a>
-                                <!-- <a href="{{ url_for('delete_recipe', recipe_id=recipe._id) }}" class="white-text grey darken-3 waves-effect waves-light btn"><i class="material-icons">delete</i></a> -->
+                                <!-- Delete button -->
                                 <a href="#modal{{ loop.index }}" 
-                                        class=" modal-trigger white-text grey darken-3 waves-effect waves-light btn">
-                                        <i class="material-icons">delete</i></a>
-                                    <div id="modal{{ loop.index }}" class="modal">
-                                        <div class="modal-content">
-                                            <h6>Are you sure you want to delete {{ recipe.recipe_name }}?</h6>
-                                        </div>
-                                        <div class="modal-footer">
-                                            <a href="{{ url_for('profile', username=session['user']) }}" class="modal-close green-text btn-flat">Cancel</a>
-                                            <a href="{{ url_for('delete_recipe', recipe_id=recipe._id)}}"
-                                                class="modal-close btn-flat">Delete</a>
-                                        </div>
+                                    class=" modal-trigger white-text grey darken-3 waves-effect waves-light btn">
+                                    <i class="material-icons">delete</i>
+                                </a>
+                                <div id="modal{{ loop.index }}" class="modal">
+                                    <div class="modal-content">
+                                        <h6>Are you sure you want to delete {{ recipe.recipe_name }}?</h6>
                                     </div>
+                                    <div class="modal-footer">
+                                        <a href="{{ url_for('profile', username=session['user']) }}" class="modal-close green-text btn-flat">Cancel</a>
+                                        <a href="{{ url_for('delete_recipe', recipe_id=recipe._id)}}"
+                                            class="modal-close btn-flat">Delete</a>
+                                    </div>
+                                </div>
                             </p>
                         {% endif %}
                         </div>
