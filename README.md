@@ -32,9 +32,17 @@ The website is designed to be responsive and accessible on a range of devices, m
 
 ### Wireframes
 
-  - *Home* page - [View](assets/pdf/home-page.pdf)
+  - *Home* page - [View](static/pdf/home-page.pdf)
 
-  - 
+  - *All Recipes* page - [View](static/pdf/all-recipes.pdf)
+
+  - *Profile* page - [View](static/pdf/profile.pdf)
+
+  - *Add New Recipe* page - [View](static/pdf/add-new-recipe.pdf)
+
+  - *Log In* page - [View](static/pdf/log-in.pdf)
+
+  - *Register* page - [View](static/pdf/register.pdf)
 
 ## Features
 
