@@ -1,4 +1,4 @@
-<!-- Handling error 404 and displaying relevant web page -->
+<!-- Handling error 500 and displaying relevant web page -->
 
 {% extends "base.html" %}
 {% block content %}
@@ -9,9 +9,9 @@
           <div class="card jumbotron-card">
              <div class="card-content white-text">
                 <div class="card-title logo center">
-                   <h1>Sorry...</h1>
+                   <h1>500 Server Error</h1>
                 </div>
-                <p class="hometext center-align" id="p-margin-bottom">It looks like the page you are looking for does not exist.</p>
+                <p class="hometext center-align" id="p-margin-bottom">Sorry, it looks like something went wrong.</p>
              </div>
              <div class="card-action center">
                 <a href="{{ url_for('index') }}" class="white-text grey darken-3 waves-effect waves-light btn">To Home Page</a>

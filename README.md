@@ -309,7 +309,9 @@ Click [Here](https://docs.github.com/en/github/creating-cloning-and-archiving-re
 
 ### Code
 
-- The code for the 404 error page was taken from [Flask documentation](https://flask.palletsprojects.com/en/1.1.x/patterns/errorpages/)
+- The code for handling error 404 was taken from [Flask documentation](https://flask.palletsprojects.com/en/1.1.x/patterns/errorpages/)
+
+- The code for handling error 500 was taken from [Flask documentation](https://flask.palletsprojects.com/en/2.0.x/errorhandling/)
 
 - Approach to identify 
 

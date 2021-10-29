@@ -166,11 +166,20 @@ def delete_recipe(recipe_id):
     return redirect(url_for("profile", username=session["user"]))
     
 
+# Handling error 404 and displaying relevant web page
 # Code credit: https://flask.palletsprojects.com/en/1.1.x/patterns/errorpages/
 @app.errorhandler(404)
 def page_not_found(e):
     # custom 404 error page
     return render_template('404.html'), 404
+
+
+# Handling error 500 and displaying relevant web page
+# Code credit: https://flask.palletsprojects.com/en/2.0.x/errorhandling/
+@app.errorhandler(500)
+def internal_server_error(e):
+    # custom 500 error page
+    return render_template('500.html'), 500
 
 
 if __name__ == "__main__":
