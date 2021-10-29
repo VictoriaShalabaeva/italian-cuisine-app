@@ -2,7 +2,7 @@
 
 View the live project [Here](https://italian-cuisine-app.herokuapp.com/)
 
-*Buon Appetito* is an interactive website that .
+*Buon Appetito* is an interactive website that allows to collect and share recipes of Italian cuisine meal.
 
 The website is designed to be responsive and accessible on a range of devices, making it easy to navigate through.
 
