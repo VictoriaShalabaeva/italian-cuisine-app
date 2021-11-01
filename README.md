@@ -14,7 +14,14 @@ The website is designed to be responsive and accessible on a range of devices, m
 
   - **As a user:**
 
-    - I want to see 
+    - I want to search for different recipes.
+    - I want to collect and store the recipes I liked in my profile.
+    - I want to orgnize my recipes (to create, edit or delete recipes).
+    - I want to share my own recipes with others.
+
+  - **As an owner of a website**
+
+    - I want to promote the products. 
       
 ### Design
 
@@ -50,11 +57,27 @@ The website is designed to be responsive and accessible on a range of devices, m
 
 - The website is responsive on many device sizes (down to 280 px).
 
+- The website allows users to Create, Read, Update and Delete recipes. This displays full CRUD functionailty.
+
+- Any user can:
+
+  - register an account,
+  - log in as an existing user,
+  - log out,
+  - view his profile page with a list of recipes that have been added,
+  - view, edit and delete recipes,
+  - see which user has created any particular recipe
+
+
 
 
 - The *Home* page:
 
   - contains an appealing background image and a Bootstap jumbotron-style component that catch the user's attention. 
+
+- The *All Recipes" page:
+
+- The *Log In"
   
  
 
@@ -62,6 +85,11 @@ The website is designed to be responsive and accessible on a range of devices, m
 
 - a *Search Bar* through which a user can search content of their concern within the website.
 
+- a *Scroll to top* button
+
+- recipes rating
+
+- contact page
 
 
 ## Technologies Used
