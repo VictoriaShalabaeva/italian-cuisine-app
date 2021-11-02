@@ -66,9 +66,7 @@
                 <div class="input-field col s12">
                     <i class="fas fa-solid fa-carrot prefix grey-text text-lighten-2"></i>
                     <textarea id="ingredients" name="ingredients" minlength="53" class="materialize-textarea validate" required>
-                        {% for ingredient in recipe.ingredients %}
-                        {{ ingredient}}
-                        {% endfor %}
+                        {{- recipe.ingredients|join('\n') -}}
                     </textarea>
                     <label for="ingredients">Ingredients</label>
                     <span class="helper-text" data-error="Wrong" data-success="Great!"> Please write every ingredient on
@@ -80,9 +78,7 @@
                 <div class="input-field col s12">
                     <i class="fas fa-align-left prefix grey-text text-lighten-2"></i>
                     <textarea id="preparation" name="preparation" minlength="5" class="materialize-textarea validate" required>
-                        {% for step in recipe.preparation %}
-                        {{ step }}
-                        {% endfor %}
+                        {{- recipe.preparation|join('\n') -}}
                     </textarea>
                     <label for="preparation">Preparation</label>
                     <span class="helper-text" data-error="Wrong" data-success="Great!"> Please write every preparation step on a new

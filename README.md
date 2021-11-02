@@ -236,7 +236,23 @@ The manual testing is described [Here](manual-testing.md).
 
 #### Fixed bugs
 
-1. 
+1. On *Edit Recipe* page, the *ingredients* and *preparation steps* sections were displayed as lists of items (see example in the image below) with additional left-side spaces and new lines (undesired). That was introducing further issues with the correct editing of database.
+
+    The initial code was rewritten using `join()` function and hyphen signs. `join()` function returns a string as a concatenation of strings in a sequence with a chosen separation (new line separation in our case). Hyphen signs (-) added to the start or end of a block remove the whitespaces before or after that block.
+
+    Initial code:
+    ```
+    {% for ingredient in recipe.ingredients %}
+      {{ ingredient }}
+    {% endfor %}
+    ```
+    <img src="static/images/edit-recipe-bug.jpg" alt="Edit Recipe page bug." width="700px" height="auto">
+
+    Final code:
+    ```
+    {{- recipe.ingredients|join('\n') -}}
+    ```
+    <img src="static/images/edit-recipe-bug-solution.jpg" alt="Correct Edit Recipe page." width="700px" height="auto">
 
 #### Existing bugs
 
