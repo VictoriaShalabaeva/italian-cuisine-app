@@ -324,17 +324,17 @@ Click [Here](https://docs.github.com/en/github/creating-cloning-and-archiving-re
 
 #### Images
 
-- Favicon image from [Iconduck](https://iconduck.com/icons/114143/moscow)
+- Favicon image was taken from [Iconduck](https://iconduck.com/emojis/15944/slice-of-pizza)
 
-- Background image on *Home* page from [Unsplash](https://unsplash.com/photos/40OJLYVWeeM)
+- Background image was taken from [Unsplash](https://unsplash.com/photos/40OJLYVWeeM)
 
-- Bucatini all'Amatriciana image from [BigOven](https://www.bigoven.com/recipe/bucatini-allamatriciana/2435565)
+- Bucatini all'Amatriciana image was taken from [BigOven](https://www.bigoven.com/recipe/bucatini-allamatriciana/2435565)
 
-- Spaghetti alla carbonara image from [Recepten.be](https://recepten.be/recept/authentieke-spaghetti-carbonara/)
+- Spaghetti alla carbonara image was taken from [Recepten.be](https://recepten.be/recept/authentieke-spaghetti-carbonara/)
 
-- Pizza Margherita image from [Indoindians](https://www.indoindians.com/so-simple-and-so-good-pizza-margherita/)
+- Pizza Margherita image was taken from [Indoindians](https://www.indoindians.com/so-simple-and-so-good-pizza-margherita/)
 
-- Tiramisu image from [La Rosiere](https://www.larosiere.net/tiramisu-recette/)
+- Tiramisu image was taken from [La Rosiere](https://www.larosiere.net/tiramisu-recette/)
 
 
 

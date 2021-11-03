@@ -1,5 +1,6 @@
 body {
-    background-image: url(../images/italian-food.jpg);
+    /*Photo credit: https://unsplash.com/photos/40OJLYVWeeM */
+    background-image: url(../images/italian-food.jpg); 
     background-repeat: no-repeat;
     width: 100%;
     background-attachment: fixed;
