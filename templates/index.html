@@ -18,6 +18,7 @@
             </div>
             {% else %}
             <div class="card-action center card-action-padding">
+               <a href="{{ url_for('get_recipes') }}" class="white-text grey darken-3 waves-effect waves-light btn">View All Recipes</a>
                <a href="{{ url_for('login') }}" class="white-text grey darken-3 waves-effect waves-light btn">Log In</a>
                <a href="{{ url_for('register') }}" class="white-text grey darken-3 waves-effect waves-light btn">Register</a>
             </div>
