@@ -11,8 +11,18 @@ body {
     flex-direction: column;
 }
 
+@media screen and (max-width: 600px) {
+    body {
+        background-image: url(../images/italian-food-small.jpg);
+    }
+}
+
 main {
     flex: 1 0 auto;
+}
+
+.row {
+    width: 100%;
 }
 
 /*------------- Flash messages */
@@ -105,36 +115,6 @@ nav .brand-logo {
     padding-top: 0;
     background-color: rgba(12, 12, 12, 0.7);
 }
-
-/* .footer {
-    text-align: center;
-    padding-top: 10px;
-    padding-bottom: 13px;
-    background-color: #494947;
-    color: #ffffff;
-    display: block;
-    background-color: rgba(12, 12, 12, 0.7);
-}
-
-.footer-fixed {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    margin-bottom: 0;
-}
-
-@media screen and (max-height: 500px) {
-    .footer {
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
-}
-@media screen and (max-width: 330px) {
-    .footer {
-        padding-top: 5px;
-        padding-bottom: 9px;
-    }
-} */
 
 /* -----------------------------All recipes page */
 
