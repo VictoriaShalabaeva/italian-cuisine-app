@@ -331,18 +331,37 @@ Click [Here](https://docs.github.com/en/github/creating-cloning-and-archiving-re
 
 - Tiramisu image was taken from [La Rosiere](https://www.larosiere.net/tiramisu-recette/)
 
+- Cannoli Siciliani image was taken from [Home Cooking Adventure](https://www.homecookingadventure.com/recipes/cannoli-siciliani)
+
+- Vitello tonnato image was taken from [LINDENHOFF](https://www.lindenhoff.nl/recepten/vitello-tonnato/)
+
+- Lasagna alla Bolognese image was taken from [PASTAFICIO](https://www.pastaficio.nl/alles-wat-je-moet-weten-over-lasagne/)
+
+- Saltimbocca alla Romana image was taken from [Cibovagare](https://www.cibovagare.it/ricette/saltimbocca-alla-romana-1036.html)
+
+- Risotto ai funghi porcini image was taken from [Galfrè Antipasti d'Italia](https://www.ghiottogalfre.it/it/primi/24-risotto-ai-funghi-porcini.html)
+
 
 
 #### Recipes
 
-- Bucatini all'Amatriciana recipe was taken from [Bon Appétit](https://www.bonappetit.com/recipe/bucatini-all-amatriciana-2)
+- Bucatini all'Amatriciana recipe was taken from [GREAT ITALIAN CHEFS](https://www.greatitalianchefs.com/recipes/bucatini-all-amatriciana-recipe)
 
-- Spaghetti alla carbonara recipe was taken from [Food Network](https://foodnetwork.co.uk/recipes/spaghetti-alla-carbonara/?utm_source=foodnetwork.com&utm_medium=domestic)
+- Spaghetti alla carbonara recipe was taken from [GREAT BRITISH CHEFS](https://www.greatbritishchefs.com/recipes/spaghetti-carbonara-recipe?_ga=2.47408039.1629710258.1636143312-85067904.1636143312)
 
 - Pizza Margherita recipe were taken from [Cooking](https://cooking.nytimes.com/recipes/1014332-pizza-margherita)
 
-- Tiramisu recipe was taken from [AllRecipes](https://www.allrecipes.com/recipe/21412/tiramisu-ii/)
+- Tiramisu recipe was taken from [GREAT ITALIAN CHEFS](https://www.greatitalianchefs.com/recipes/tiramisu-recipe?_ga=2.210897045.1629710258.1636143312-85067904.1636143312)
 
+- Cannoli Siciliani recipe was taken from [GREAT ITALIAN CHEFS](https://www.greatitalianchefs.com/recipes/sicilian-cannoli-recipe?_ga=2.210460693.1629710258.1636143312-85067904.1636143312)
+
+- Vitello tonnato recipe was taken from [GREAT BRITISH CHEFS](https://www.greatitalianchefs.com/recipes/vitello-tonnato-recipe)
+
+- Lasagna alla Bolognese recipe was taken from [GREAT ITALIAN CHEFS](https://www.greatitalianchefs.com/recipes/lasagne-alla-bolognese-recipe?_ga=2.47866919.1629710258.1636143312-85067904.1636143312)
+
+- Saltimbocca alla Romana recipe was taken from [Jamie Oliver](https://www.jamieoliver.com/recipes/beef-recipes/saltimbocca-alla-romana/)
+
+- Risotto ai funghi porcini recipe was taken from [Jamie Oliver](https://www.jamieoliver.com/recipes/chicken-recipes/baked-chicken-porcini-risotto/)
 
 - The present README file was written following the [template](https://github.com/Code-Institute-Solutions/SampleREADME) provided by Code Institute. Some parts (like Deployment section) were copied and pasted as they describe exactly the same procedure that was employed for the realization of this project.
 

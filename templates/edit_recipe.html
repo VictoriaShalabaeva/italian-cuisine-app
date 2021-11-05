@@ -65,7 +65,7 @@
             <div class="row">
                 <div class="input-field col s12">
                     <i class="fas fa-solid fa-carrot prefix grey-text text-lighten-2"></i>
-                    <textarea id="ingredients" name="ingredients" minlength="53" class="materialize-textarea validate" required>
+                    <textarea id="ingredients" name="ingredients" minlength="3" class="materialize-textarea validate" required>
                         {{- recipe.ingredients|join('\n') -}}
                     </textarea>
                     <label for="ingredients">Ingredients</label>
@@ -77,7 +77,7 @@
             <div class="row">
                 <div class="input-field col s12">
                     <i class="fas fa-align-left prefix grey-text text-lighten-2"></i>
-                    <textarea id="preparation" name="preparation" minlength="5" class="materialize-textarea validate" required>
+                    <textarea id="preparation" name="preparation" minlength="3" class="materialize-textarea validate" required>
                         {{- recipe.preparation|join('\n') -}}
                     </textarea>
                     <label for="preparation">Preparation</label>
