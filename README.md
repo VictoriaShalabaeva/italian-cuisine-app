@@ -14,8 +14,8 @@ The website is designed to be responsive and accessible on a range of devices, m
 
   - **As a user:**
 
-    - I want to search for different recipes.
-    - I want to collect and store the recipes I liked in my profile.
+    - I want to search for different recipes and get inspiration to try something new.
+    - I want to be able to create my own recipes and store them in my profile. 
     - I want to orgnize my recipes (to create, edit or delete recipes).
     - I want to share my own recipes with others.
 
@@ -27,15 +27,15 @@ The website is designed to be responsive and accessible on a range of devices, m
 
   - **Colour Scheme**
 
-    The main colours used are ....
+    The main colours used are dark grey #212121, white #FFFFFF and grey #424242.
 
   - **Typography**
 
-    The Roboto and Yanone Kaffeesatz (Navbar heading) fonts are the main fonts used throughout the whole website with Sans Serif as the fallback font in case for any reason the font isn't being imported into the site correctly. Roboto is a clean font used frequently in programming, so it is both attractive and appropriate.
+    The Roboto, Dancing Script (Navbar heading) and Courgette (titles) fonts are the main fonts used throughout the whole website with Sans Serif and cursive as the fallback fonts in case for any reason the font isn't being imported into the site correctly. Roboto is a clean font used frequently in programming, so it is both attractive and appropriate.
 
   - **Imagery**
      
-    The large background images are designed to be striking and catch the user's attention demonstrating...
+    The large background image is striking and catches the user's attention. All other images on the site are the image URLs added by users when creating their recipes.
 
 ### Wireframes
 
@@ -66,18 +66,13 @@ The website is designed to be responsive and accessible on a range of devices, m
   - log out,
   - view his profile page with a list of recipes that have been added,
   - view, edit and delete recipes,
-  - see which user has created any particular recipe
+  - see which user has created any particular recipe.
 
+- The *Home* page features the name of the website, shows a brief overview of the sites purpose, displays a link to view all recipes, a link to log in or register for unregistered users.
 
+- The *All Recipes* page 
 
-
-- The *Home* page:
-
-  - contains an appealing background image and a Bootstap jumbotron-style component that catch the user's attention. 
-
-- The *All Recipes" page:
-
-- The *Log In"
+- The *Log In*
   
  
 
