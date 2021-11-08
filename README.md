@@ -341,6 +341,8 @@ Click [Here](https://docs.github.com/en/github/creating-cloning-and-archiving-re
 
 - Risotto ai funghi porcini image was taken from [Galfrè Antipasti d'Italia](https://www.ghiottogalfre.it/it/primi/24-risotto-ai-funghi-porcini.html)
 
+- Spaghetti alle vongole porcini image was taken from [ELLE](https://www.elle.com/nl/eten/recepten/a32915157/recept-spaghetti-alle-vongole-spaghetteria/)
+
 
 
 #### Recipes
@@ -362,6 +364,8 @@ Click [Here](https://docs.github.com/en/github/creating-cloning-and-archiving-re
 - Saltimbocca alla Romana recipe was taken from [Jamie Oliver](https://www.jamieoliver.com/recipes/beef-recipes/saltimbocca-alla-romana/)
 
 - Risotto ai funghi porcini recipe was taken from [Jamie Oliver](https://www.jamieoliver.com/recipes/chicken-recipes/baked-chicken-porcini-risotto/)
+
+- Spaghetti alle vongole recipe was taken from [GREAT ITALIAN CHEFS](https://www.greatitalianchefs.com/recipes/spaghetti-alle-vongole-recipe?_ga=2.65817127.884526670.1636361549-85067904.1636143312)
 
 - The present README file was written following the [template](https://github.com/Code-Institute-Solutions/SampleREADME) provided by Code Institute. Some parts (like Deployment section) were copied and pasted as they describe exactly the same procedure that was employed for the realization of this project.
 
