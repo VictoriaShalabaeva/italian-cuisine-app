@@ -68,21 +68,17 @@ The website is designed to be responsive and accessible on a range of devices, m
   - view, edit and delete recipes,
   - see which user has created any particular recipe.
 
-- The *Home* page features the name of the website, shows a brief overview of the sites purpose, displays a link to view all recipes, a link to log in or register for unregistered users.
-
-- The *All Recipes* page 
-
-- The *Log In*
-  
- 
-
 ### Features Left to Implement
 
-- a *Search Bar* through which a user can search content of their concern within the website.
+- recipes rating
+
+- the posibility to leave a comment on a recipe
+
+- admin login functionality to edit or delete recipes added by other users (in case of incorrect or inappropriate information)
+
+- advertisment integration (to promote any branded product in the recipes description)
 
 - a *Scroll to top* button
-
-- recipes rating
 
 - contact page
 
@@ -95,89 +91,111 @@ The website is designed to be responsive and accessible on a range of devices, m
 
 - CSS3
 
+- Python3
+
 - JavaScript
 
 ### Frameworks, Libraries & Programs Used
 
-1. [Bootstrap 4.1.3:](https://getbootstrap.com/docs/4.1/getting-started/introduction/)
+1. [Materialize:](https://materializecss.com/)
 
    Grid System to make the site responsive,
 
    Navbar to make a responsive navigation header,
 
-   Jumbotron-style component for calling extra attention to featured content or information.
+   Cards components for displaying recipes.
 
-2. [Google Maps JavaScript API:](https://developers.google.com/maps/documentation/javascript/overview)   
+2. [MongoDB:](https://www.mongodb.com/)
 
-   Google Maps JavaScript API was used to integrate an interactive Google map with built in features such as markers and info windows to provide additional information.
+   MongoDB was used to store recipes and users data.
 
-3. [EmailJS:](https://www.emailjs.com/)
+3. [Heroku:](https://id.heroku.com/login)
 
-   EmailJS was used to connects the contact form to an email service.
-
-4. [OpenWeather API:](https://openweathermap.org/api)
-
-   OpenWeather API was used to display a current weather in Moscow.
+   Heroku was used to deploy and run the application.
    
-5. [Google Fonts:](https://fonts.google.com/)
+4. [Flask:](https://flask.palletsprojects.com/en/2.0.x/)
 
-   Google fonts Roboto and Yanone Kaffeesatz were used on all pages throughout the project.
+   Flask was used as a framework to develope a web application.
 
-6. [jQuery:](https://jquery.com/)
+5. [Jinja:](https://jinja.palletsprojects.com/en/3.0.x/)
 
-   jQuery was used in JavaScript codes for the media query and detection of iOS devices; within Bootstrap to make the navbar responsive.
+   Jinja was used to render templates.
 
-7. [Git:](https://git-scm.com/)
+6. [PyMongo:](https://pymongo.readthedocs.io/en/stable/)
+
+   PyMongo was used to to work with MongoDB from Python.
+
+7. [Werkzeug:](https://pypi.org/project/Werkzeug/)
+
+   Werkzeug was used to generate and check password hash.
+
+8. [jQuery:](https://jquery.com/)
+
+   jQuery was used in JavaScript codes to add functionality to materialize compontents.
+
+9. [Git:](https://git-scm.com/)
 
    Git was used for version control. 
 
-8. [GitPod:](https://www.gitpod.io/)
+10. [GitPod:](https://www.gitpod.io/)
 
-   GitPod was used as an IDE platform for website realization.
+    GitPod was used as an IDE platform for website realization.
 
-9. [GitHub:](https://github.com/)
+11. [GitHub:](https://github.com/)
 
-   GitHub is used to store the project code after being pushed from GitPod.
+    GitHub is used to store the project code after being pushed from GitPod.
 
-10. [Balsamiq:](https://balsamiq.com/)
+12. [Google Fonts:](https://fonts.google.com/)
+
+    Google fonts Roboto, Dancing Script and Courgette were used on all pages throughout the project.
+
+13. [Balsamiq:](https://balsamiq.com/)
 
     Balsamiq was used to create wireframes during the design process.
 
-11. [Squoosh:](https://squoosh.app/editor)
+14. [Squoosh:](https://squoosh.app/editor)
 
     Squoosh image editor was used to reduces file size of the images.
 
-12. [Am I responsive?](http://ami.responsivedesign.is/)
+15. [Am I responsive?:](http://ami.responsivedesign.is/)
 
     Am I responsive? was used to show how the website looks on different devices.
 
-13. [AutoPrefixer:](https://autoprefixer.github.io/)
+16. [Font Awesome:](https://fontawesome.com/)
+
+    Font Awesome was used to add icons.
+
+17. [AutoPrefixer:](https://autoprefixer.github.io/)
 
     AutoPrefixer was used to add vendor prefixes to a CSS code.
 
-14. [Beautifier:](https://beautifier.io/) 
+18. [Beautifier:](https://beautifier.io/) 
 
     Beautifier was used to format code in a consistent and readable way.
 
-15. [W3C Markup Validator](https://validator.w3.org/)
+19. [W3C Markup Validator](https://validator.w3.org/)
 
     W3C Markup Validator was used to check the markup validity of Web documents in HTML.
 
-16. [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)
+20. [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)
  
     W3C CSS Validator was used to check the markup validity of Web documents in CSS.
 
-17. [JSHint](https://jshint.com/)
+21. [JSHint](https://jshint.com/)
 
     JSHint was used to detect errors and potential problems in JavaScript code.
 
-18. [Chrome DevTools](https://developer.chrome.com/docs/devtools/)
+22. [Chrome DevTools](https://developer.chrome.com/docs/devtools/)
 
     Chrome DevTools was used to inspect and modify the website code.
 
-19. [Lighthouse](https://developers.google.com/web/tools/lighthouse)
+23. [Lighthouse](https://developers.google.com/web/tools/lighthouse)
 
     Lighthouse was used to assess performance, accessibility, SEO and best practices.
+
+24. [PEP8 online](http://pep8online.com/)
+
+    PEP8 online was used to check a code for PEP8 requirements.
 
 ## Testing
 

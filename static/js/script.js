@@ -1,7 +1,7 @@
 $(document).ready(function(){
-    $('.sidenav').sidenav({edge: "right"});
-    $("select").formSelect();
-    $('.modal').modal();
+    $('.sidenav').sidenav({edge: "right"}); // sidenav initialization
+    $("select").formSelect(); // form select element initialization
+    $('.modal').modal(); // modal initialization
 
     validateMaterializeSelect();
     function validateMaterializeSelect() {
