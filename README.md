@@ -201,7 +201,7 @@ The website is designed to be responsive and accessible on a range of devices, m
 
 The W3C Markup Validator, W3C CSS Validator and JSHint Services were used to validate HTML, CSS and JS code, respectively, to ensure no syntax error.
 
-- [W3C Markup Validator](https://validator.w3.org/). Please see Figure S1 in [Supp Info](supp-info.md) for the results.
+- [W3C Markup Validator](https://validator.w3.org/). Please see results [Here](static/images/testing/html_validator.jpg).
 - [W3C CSS Validator](https://jigsaw.w3.org/css-validator/). Please see Figure S2 in [Supp Info](supp-info.md) for the results.
 - [JSHint](https://jshint.com/) did not detect any potential problem in JavaScript codes.
 
