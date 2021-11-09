@@ -19,21 +19,28 @@ app.secret_key = os.environ.get("SECRET_KEY")
 mongo = PyMongo(app)
 
 
-# ---------------------------------Home page
+"""
+Route decorator to navigate to Home page.
+"""
 @app.route("/")
 @app.route("/index")
 def index():
     return render_template("index.html")
 
 
-# ---------------------------------All Recipes page    
+"""
+Route decorator to navigate to All Recipes page.
+Retrieves recipes data from MongoDB.
+"""   
 @app.route("/get_recipes")
 def get_recipes():
     recipes = list(mongo.db.recipes.find())
     return render_template("all_recipes.html", recipes=recipes)
 
 
-# ---------------------------------Search function
+"""
+Route decorator to allows users to search for recipes.
+"""
 @app.route("/search", methods=["GET", "POST"])
 def search():
     query = request.form.get("query")
@@ -41,7 +48,9 @@ def search():
     return render_template("all_recipes.html", recipes=recipes)
 
 
-# -----------------------------------------Register  
+"""
+Route decorator for user registration.
+"""
 @app.route("/register", methods=["GET", "POST"])
 def register():
     if request.method == "POST":
@@ -67,7 +76,9 @@ def register():
     return render_template("register.html")
 
 
-# -------------------------------------------Log In 
+"""
+Route decorator for user login.
+"""
 @app.route("/login", methods=["GET", "POST"])
 def login():
     if request.method == "POST":
@@ -94,7 +105,9 @@ def login():
     return render_template("login.html")
 
 
-# --------------------------------------------Profile page
+"""
+Route decorator to navigate to Profile page.
+"""
 @app.route("/profile/<username>", methods=["GET", "POST"])
 def profile(username):
     # grab the session user's username from db
@@ -114,7 +127,9 @@ def profile(username):
         return redirect(url_for("login"))
 
 
-# ----------------------------------------------Log Out
+"""
+Route decorator for user logout.
+"""
 @app.route("/logout")
 def logout():
     # remove user from session cookie
@@ -123,7 +138,9 @@ def logout():
     return redirect(url_for("login"))
 
 
-# -----------------------------------------Add New Recipe
+"""
+Route decorator to add new recipe.
+"""
 @app.route("/add_new_recipe", methods=["GET", "POST"])
 def add_new_recipe():
     if "user" not in session:
@@ -148,7 +165,9 @@ def add_new_recipe():
     return render_template("add_new_recipe.html", categories=categories)
 
 
-# --------------------------------------------Edit Recipe
+"""
+Route decorator to edit recipe.
+"""
 @app.route("/edit_recipe/<recipe_id>", methods=["GET", "POST"])
 def edit_recipe(recipe_id):
 
@@ -183,7 +202,9 @@ def edit_recipe(recipe_id):
     return render_template("edit_recipe.html", recipe=recipe, categories=categories)
 
 
-# -----------------------------------------Delete Recipe
+"""
+Route decorator to delete recipe.
+"""
 @app.route("/delete_recipe/<recipe_id>")
 def delete_recipe(recipe_id):
     
@@ -202,19 +223,21 @@ def delete_recipe(recipe_id):
     return redirect(url_for("profile", username=session["user"]))
     
 
-# Handling error 404 and displaying relevant web page
-# Code credit: https://flask.palletsprojects.com/en/1.1.x/patterns/errorpages/
+"""
+Handling error 404 and displaying a custom 404 error page.
+Code credit: https://flask.palletsprojects.com/en/1.1.x/patterns/errorpages/
+"""
 @app.errorhandler(404)
 def page_not_found(e):
-    # custom 404 error page
     return render_template('404.html'), 404
 
 
-# Handling error 500 and displaying relevant web page
-# Code credit: https://flask.palletsprojects.com/en/2.0.x/errorhandling/
+"""
+Handling error 500 and displaying custom 500 error page.
+Code credit: https://flask.palletsprojects.com/en/2.0.x/errorhandling/
+"""
 @app.errorhandler(500)
 def internal_server_error(e):
-    # custom 500 error page
     return render_template('500.html'), 500
 
 
