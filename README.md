@@ -201,9 +201,10 @@ The website is designed to be responsive and accessible on a range of devices, m
 
 The W3C Markup Validator, W3C CSS Validator and JSHint Services were used to validate HTML, CSS and JS code, respectively, to ensure no syntax error.
 
-- [W3C Markup Validator](https://validator.w3.org/). Please see results [Here](static/images/testing/html_validator.jpg).
-- [W3C CSS Validator](https://jigsaw.w3.org/css-validator/). Please see Figure S2 in [Supp Info](supp-info.md) for the results.
-- [JSHint](https://jshint.com/) did not detect any potential problem in JavaScript codes.
+- [W3C Markup Validator](https://validator.w3.org/). Please see the results of base.html validation [Here](static/pdf/w3c-markup-validator.pdf). All errors were associated with Jinja syntax.
+- [W3C CSS Validator](https://jigsaw.w3.org/css-validator/). Please see results in W3C CSS Validator:
+  <img src="static/images/testing/w3c-css-validator.jpg" alt="Result in W3C CSS Validator." width="500px" height="auto">
+- [JSHint](https://jshint.com/) did not detect any problem in JavaScript codes.
 
 ### Testing User Stories from User Experience (UX) Section
 

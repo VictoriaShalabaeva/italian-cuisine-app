@@ -1,3 +1,8 @@
+/**
+ * Code credit: the code is written following the Code Institute tutorial.
+ */
+
+
 $(document).ready(function(){
     $('.sidenav').sidenav({edge: "right"}); // sidenav initialization
     $("select").formSelect(); // form select element initialization
