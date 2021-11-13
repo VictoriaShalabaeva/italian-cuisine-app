@@ -2,7 +2,7 @@
 {% block content %}
 
 
-    <div class="row card-panel login-card card-margin-top card-width card-margin-bottom">
+    <div class="row card-panel login-card card-margin-top card-width card-margin-bottom card-panel-padding">
         <h3 class="white-text center-align title">Add New Recipe</h3>
         <form class="col s12" method="POST" action="{{ url_for('add_new_recipe') }}">
             <!-- category selection -->
@@ -76,19 +76,19 @@
                     <span class="helper-text" data-error="Wrong" data-success="Great!"> Please write every preparation step on a new
                         line </span>
                 </div>
-            </div>
-            <!-- submit button -->
-            <div class="row">
-                <div class="col s12 center-align">
-                    <button type="submit" class="btn-large grey darken-3 text-shadow">
-                        Add Recipe <i class="fas fa-plus-square right"></i>
-                    </button>
-                    <a href="{{ url_for('profile', username=session['user']) }}" class="btn-large grey darken-3 text-shadow">
-                        Cancel <i class="fas fa-times-circle right"></i>
-                    </a>
-                </div>
-            </div>
+            </div>            
         </form>
+        <!-- submit and cancel buttons -->
+        <div class="row">
+            <div class="col s12 center-align">
+                <button type="submit" class="btn-large grey darken-3 text-shadow">
+                    Add Recipe <i class="fas fa-plus-square right"></i>
+                </button>
+                <a href="{{ url_for('profile', username=session['user']) }}" class="btn-large grey darken-3 text-shadow">
+                    Cancel <i class="fas fa-times-circle right"></i>
+                </a>
+            </div>
+        </div>
     </div>
 
 {% endblock %}
