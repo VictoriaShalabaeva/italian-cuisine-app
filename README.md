@@ -251,23 +251,45 @@ The manual testing is described [Here](manual-testing.md).
 
 #### Fixed bugs
 
-1. On *Edit Recipe* page, the *ingredients* and *preparation steps* sections were displayed as lists of items (see example in the image below) with additional left-side spaces and new lines (undesired). That was introducing further issues with the correct editing of database.
+1. On *Edit Recipe* page, the *ingredients* and *preparation steps* sections were displayed as lists of items (see example in the image below) with additional left-side spaces and new lines (undesired). That was introducing further issues with the correct editing of data in the database.
 
     The initial code was rewritten using `join()` function and hyphen signs. `join()` function returns a string as a concatenation of strings in a sequence with a chosen separation (new line separation in our case). Hyphen signs (-) added to the start or end of a block remove the whitespaces before or after that block.
 
     Initial code:
-    ```
-    {% for ingredient in recipe.ingredients %}
-      {{ ingredient }}
-    {% endfor %}
-    ```
-    <img src="static/images/edit-recipe-bug.jpg" alt="Edit Recipe page bug." width="700px" height="auto">
+      ```
+      {% for ingredient in recipe.ingredients %}
+        {{ ingredient }}
+      {% endfor %}
+      ```
+      <img src="static/images/edit-recipe-bug.jpg" alt="Edit Recipe page bug." width="700px" height="auto">
 
     Final code:
-    ```
-    {{- recipe.ingredients|join('\n') -}}
-    ```
-    <img src="static/images/edit-recipe-bug-solution.jpg" alt="Correct Edit Recipe page." width="700px" height="auto">
+      ```
+      {{- recipe.ingredients|join('\n') -}}
+      ```
+      <img src="static/images/edit-recipe-bug-solution.jpg" alt="Correct Edit Recipe page." width="700px" height="auto">
+
+2. The two elements indicated with red errors (search fiels and buttons) in the image below have *Materialize* classes *s12* and should have occupied all the avalable row space in mobile devices. Instead they were placing in one row.
+
+    Initial code:
+      ```
+      <div class="row valign-wrapper center-align">
+        <div class="input-field col s12 l6 xl8">
+            <i class="fas fa-search prefix grey-text text-lighten-1"></i>
+            <input type="text" name="query" id="query" minlength="3" class="validate" required>
+            <label for="query">Search Recipes</label>
+        </div>
+        <div class="col s12 l6 xl4">
+            <button type="submit" class="white-text grey darken-3 waves-effect waves-light btn">
+                <i class="fas fa-search left"></i> Search
+            </button>
+            <a href="{{ url_for('get_recipes') }}" class="white-text orange darken-4 waves-effect waves-light btn">Reset</a>
+        </div>
+      </div>
+      ```
+      <img src="static/images/search-bar-bug.jpg" alt="Search field bug." width="200px" height="auto">
+    
+    Final code:
 
 #### Existing bugs
 
