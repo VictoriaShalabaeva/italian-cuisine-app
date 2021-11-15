@@ -58,3 +58,5 @@ Functionality, Usability and Responsiveness of the key website elements were tes
 
 ### Flash messages
 
+### Search
+
