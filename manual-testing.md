@@ -90,7 +90,7 @@ Functionality, Usability and Responsiveness of the key website elements were tes
 ### Add New Recipe
 
   - When clicking the button *Add New Recipe*, the user can fill in the form to create a new recipe.
-  - If the user is not logged in, but enter url of *Add New Recipe page*, the user will bw redirected to the *Log In* page.
+  - If the user is not logged in, but enter url of *Add New Recipe* page, the user will bw redirected to the *Log In* page.
   - The dropdown menu with categories is functioning well.
   - The input fields have helper messages.
   - When the input field is filled in correctly, the green text message appears; when the input field is filled in incorrectly, the red text appears.
@@ -113,6 +113,7 @@ Functionality, Usability and Responsiveness of the key website elements were tes
   - If the logged in user click *Delete Recipe* button, the modal window will appear asking if the user is sure to delete a recipe. 
   - If the user click *Delete* button, the recipe will be deleted from the database and consequently from *AllRecipes* and *Profile* pages.
   - If the user click *Cancel* button, the user is redirected to the *Profile* page.
+  - When the recipe is deleted, the user is redirected to the *Profile* page and the falsh message is displayed.
 
     <img src="static/images/testing/delete-recipe.jpg" alt="Delete Recipe testing" width="500px" height="auto">
 
