@@ -261,15 +261,15 @@ The manual testing is described [Here](manual-testing.md).
         {{ ingredient }}
       {% endfor %}
       ```
-      <img src="static/images/edit-recipe-bug.jpg" alt="Edit Recipe page bug." width="700px" height="auto">
+      <img src="static/images/bugs/edit-recipe-bug.jpg" alt="Edit Recipe page bug." width="700px" height="auto">
 
     Final code:
       ```
       {{- recipe.ingredients|join('\n') -}}
       ```
-      <img src="static/images/edit-recipe-bug-solution.jpg" alt="Correct Edit Recipe page." width="700px" height="auto">
+      <img src="static/images/bugs/edit-recipe-bug-solution.jpg" alt="Correct Edit Recipe page." width="700px" height="auto">
 
-2. The two elements indicated with red errors (search fiels and buttons) in the image below have *Materialize* classes *s12* and should have occupied all the avalable row space in mobile devices. Instead they were placing in one row.
+2. The two elements indicated with red errors (search fiels and buttons) in the image below have *Materialize* classes *s12* and should have occupied two rows in mobile devices. Instead they were placing in one row.
 
     Initial code:
       ```
@@ -287,9 +287,13 @@ The manual testing is described [Here](manual-testing.md).
         </div>
       </div>
       ```
-      <img src="static/images/search-bar-bug.jpg" alt="Search field bug." width="200px" height="auto">
+      <img src="static/images/bugs/search-bar-bug.jpg" alt="Search field bug." width="200px" height="auto">
     
     Final code:
+
+      The delition of `valign-wrapper` class solve the the issue:
+      <img src="static/images/bugs/search-bar-bug-solution.jpg" alt="Search field bug solution." width="200px" height="auto">
+
 
 #### Existing bugs
 
