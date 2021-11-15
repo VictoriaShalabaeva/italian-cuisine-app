@@ -166,7 +166,7 @@ def edit_recipe(recipe_id):
         return render_template('404.html'), 404
 
     if recipe["created_by"] != session["user"]:
-        return redirect(url_for("index"))
+        return redirect('500.html'), 500
 
     if request.method == "POST":
         submit = {

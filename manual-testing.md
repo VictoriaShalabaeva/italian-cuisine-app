@@ -48,15 +48,23 @@ Functionality, Usability and Responsiveness of the key website elements were tes
 
     <img src="static/images/testing/successful-registration.jpg" alt="User's successful registration." width="700px" height="auto">
 
+  - If the user tries to register an account with the username that already exists, the warning flash message appears.
+
+    <img src="static/images/testing/username-already-exists.jpg" alt="Flash message that username already exists." width="700px" height="auto">
+
   - The users with existing accounts can successfully log in through *Log In* page and be rediracted to their *Profile* page.
 
     <img src="static/images/testing/successful-login.jpg" alt="User has been successfully logged in." width="700px" height="auto">
+
+  - If the user, trying to log in, enters an incorrect username or/and password, the warning flash message appears.
+
+    <img src="static/images/testing/incorrect-username-or-password.jpg" alt="Flash message that username or/and password are incorrect." width="700px" height="auto">
 
   - If the user presses the *Log Out* button on Navbar, the user is redirected to the *Log In* page. The flash message is correctly displayed.
 
     <img src="static/images/testing/successful-logout.jpg" alt="User has been successfully logged out." width="700px" height="auto">
 
-### All recipes page
+### All Recipes page
 
   - For not registered users:
       - all recipes are displayes (from all users),
@@ -82,6 +90,7 @@ Functionality, Usability and Responsiveness of the key website elements were tes
 ### Add New Recipe
 
   - When clicking the button *Add New Recipe*, the user can fill in the form to create a new recipe.
+  - If the user is not logged in, but enter url of *Add New Recipe page*, the user will bw redirected to the *Log In* page.
   - The dropdown menu with categories is functioning well.
   - The input fields have helper messages.
   - When the input field is filled in correctly, the green text message appears; when the input field is filled in incorrectly, the red text appears.
@@ -107,7 +116,16 @@ Functionality, Usability and Responsiveness of the key website elements were tes
 
     <img src="static/images/testing/delete-recipe.jpg" alt="Delete Recipe testing" width="500px" height="auto">
 
-### Flash messages
+### Flash messages, defensive design and custom error pages
+
+  - If the user, while being logged in, copy the link of his profile page, then logs out from his profile and paste that link in the address bar, the custom 500 error page will be displayed.
+
+    <img src="static/images/testing/500-error-page.jpg" alt="500 error testing" width="700px" height="auto">
+
+  - If the user, while being not logged in, has a link of the *Edit Recipe* page for any recipe, the user will be redirected to *Log In* page.
+
+  - If the user deletes a recipe, then enter the url of that recipe in the address bar, the custom 404 error page will appear.
 
 ### Search
 
+  
