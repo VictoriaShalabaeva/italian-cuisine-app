@@ -85,10 +85,27 @@ Functionality, Usability and Responsiveness of the key website elements were tes
   - The dropdown menu with categories is functioning well.
   - The input fields have helper messages.
   - When the input field is filled in correctly, the green text message appears; when the input field is filled in incorrectly, the red text appears.
-  - If the submit button *Add Recipe* is clicked, the new recipe will be added to the database (MongoDB), will appear in your *Profile* and on the *All Recipes* page (and will be available for other users to view).
+  - If the submit button *Add Recipe* is clicked, the new recipe will be added to the database (MongoDB), it will appear in your *Profile* and on the *All Recipes* page (and will be available for other users to view).
+  - If the user enter the ingredients and preparation data correctly (each ingredient and preparation step starting with a new line), it will be recorded and consequentely displayed correctly in a recipe card.
   - If the button *Cancel* is clicked, the user will be redirected back to his *Profile* page.
     <img src="static/images/testing/add-new-recipe-form.jpg" alt="Add New Recipe form testing" width="500px" height="auto">
   
+### Edit Recipe
+
+  - If the logged in user click *Edit Recipe* button, he will be redirected to *Edit Recipe* page. 
+  - The form is prefilled with the recipe data correctly.
+  - The user can make changes and click *Save Changes* button. The data is modified in the database and can be seen in a recipe card.
+  - If the user click *Cancel* button, the user is redirected to the *Profile* page.
+
+    <img src="static/images/testing/edit-recipe-form.jpg" alt="Edit Recipe form testing" width="500px" height="auto">
+
+### Delete Recipe 
+
+  - If the logged in user click *Delete Recipe* button, the modal window will appear asking if the user is sure to delete a recipe. 
+  - If the user click *Delete* button, the recipe will be deleted from the database and consequently from *AllRecipes* and *Profile* pages.
+  - If the user click *Cancel* button, the user is redirected to the *Profile* page.
+
+    <img src="static/images/testing/delete-recipe.jpg" alt="Delete Recipe testing" width="500px" height="auto">
 
 ### Flash messages
 
