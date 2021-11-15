@@ -217,8 +217,6 @@ The manual testing is described [Here](manual-testing.md).
 
 ### Further Testing
 
-- The website was checked for performance in [Lighthouse](https://developers.google.com/web/tools/lighthouse) in Chrome DevTools (see results in Figure S3 in [Supp Info](supp-info.md)).
-
 - The Website was tested on Google Chrome, Mozilla Firefox and Microsoft Edge browsers.
 
 - The screen sizes and devices tested in Chrome DevTools include:

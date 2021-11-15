@@ -28,7 +28,7 @@ Functionality, Usability and Responsiveness of the key website elements were tes
 
   - *All recipes* and *Profile* pages rearrange correctly at certain breakpoints.
 
-    <img src="static/images/testing/different-devices-all-recipes.jpg" alt="All Recipes page layout." width="700px" height="auto">
+    <img src="static/images/testing/all-recipes-page-layout.jpg" alt="All Recipes page layout." width="700px" height="auto">
 
   - *Log In* and *Register* pages rearrange correctly at certain breakpoints.
 
@@ -55,6 +55,20 @@ Functionality, Usability and Responsiveness of the key website elements were tes
   - If the user presses the *Log Out* button on Navbar, the user is redirected to the *Log In* page. The flash message is correctly displayed.
 
     <img src="static/images/testing/successful-logout.jpg" alt="User has been successfully logged out." width="700px" height="auto">
+
+### All recipes page
+
+  - For not registered users:
+      - all recipes are displayes (from all users),
+      - there are no *Edit Recipe* and *Delete Recipe* buttons,
+      - when clicking the recipe card, the recipe data is displayed, all data fields are proparly displayed.
+        <img src="static/images/testing/all-recipes-page-for-not-registered-users.jpg" alt="All recipes page displayed for not registered users." width="700px" height="auto">
+
+  - For registered users (logged in):
+      - all recipes are displayes (from all users),
+      - there are *Edit Recipe* and *Delete Recipe* buttons,
+      - when clicking the recipe card, the recipe data, *Edit Recipe* and *Delete Recipe* buttons are displayed, all data fields are proparly displayed.
+        <img src="static/images/testing/all-recipes-page-for-registered-users.jpg" alt="All recipes page displayed for registered users." width="700px" height="auto">
 
 ### Flash messages
 
