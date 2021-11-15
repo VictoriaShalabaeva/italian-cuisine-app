@@ -90,14 +90,17 @@ Functionality, Usability and Responsiveness of the key website elements were tes
 ### Add New Recipe
 
   - When clicking the button *Add New Recipe*, the user can fill in the form to create a new recipe.
-  - If the user is not logged in, but enter url of *Add New Recipe* page, the user will bw redirected to the *Log In* page.
+  - If the user is not logged in, but enter url of *Add New Recipe* page, the user will be redirected to the *Log In* page.
   - The dropdown menu with categories is functioning well.
   - The input fields have helper messages.
   - When the input field is filled in correctly, the green text message appears; when the input field is filled in incorrectly, the red text appears.
-  - If the submit button *Add Recipe* is clicked, the new recipe will be added to the database (MongoDB), it will appear in your *Profile* and on the *All Recipes* page (and will be available for other users to view).
   - If the user enter the ingredients and preparation data correctly (each ingredient and preparation step starting with a new line), it will be recorded and consequentely displayed correctly in a recipe card.
-  - If the button *Cancel* is clicked, the user will be redirected back to his *Profile* page.
     <img src="static/images/testing/add-new-recipe-form.jpg" alt="Add New Recipe form testing" width="500px" height="auto">
+  - If the submit button *Add Recipe* is clicked, the new recipe will be added to the database (MongoDB), it will appear in your *Profile* and on the *All Recipes* page (and will be available for other users to view).
+  - When the new recipe is added, the user is redirected to the *Profile* page and the flash message is displayed.
+  - If the user does not provide a broken image url, the fallback image is displayed.
+    <img src="static/images/testing/recipe-successfully-added.jpg" alt="Flash message about successful addition of a new recipe." width="700px" height="auto">
+  - If the button *Cancel* is clicked, the user will be redirected back to his *Profile* page.
   
 ### Edit Recipe
 
