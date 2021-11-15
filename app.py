@@ -201,7 +201,7 @@ def delete_recipe(recipe_id):
         return render_template('404.html'), 404
 
     if recipe["created_by"] != session["user"]:
-        return redirect(url_for("index"))
+        return render_template('index.html')
 
     mongo.db.recipes.remove({"_id": ObjectId(recipe_id)})
     flash("Recipe Successfully Deleted")
@@ -229,4 +229,4 @@ def internal_server_error(e):
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),
-            debug=True)
+            debug=False)
