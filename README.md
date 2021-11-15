@@ -289,13 +289,15 @@ The manual testing is described [Here](manual-testing.md).
     
     Final code:
 
-      The delition of `valign-wrapper` class solve the the issue:
+      The delition of `valign-wrapper` class in the outer div solved the issue:
       <img src="static/images/bugs/search-bar-bug-solution.jpg" alt="Search field bug solution." width="200px" height="auto">
 
 
 #### Existing bugs
 
-1. 
+1. The form input autocomplete field has a white background that does not match well with the page styling. I did not manage to target that particular element to change the colour. However, the background colour of the form input in general has been modified succsefully: when the input is introduced for the first time and autocomplete does not work, the background is transperent (as it meant to be).
+
+  <img src="static/images/bugs/autocomplete-white-bug.jpg" alt="Autocomplete form input background." width="700px" height="auto">
         
 ## Deployment
 

@@ -70,6 +70,26 @@ Functionality, Usability and Responsiveness of the key website elements were tes
       - when clicking the recipe card, the recipe data, *Edit Recipe* and *Delete Recipe* buttons are displayed, all data fields are proparly displayed.
         <img src="static/images/testing/all-recipes-page-for-registered-users.jpg" alt="All recipes page displayed for registered users." width="700px" height="auto">
 
+### Profile page
+
+  - When the user is logged in, he is rediracted to his *Profile* page. On the *Profile* page, only the recipes created but the user are displayed.
+  - *Add New Recipe* button is displayed.
+  - Recipes are displayed with *Edit Recipe* and *Delete Recipe* buttons.
+  - When clicking the recipe card, the recipe data, *Edit Recipe* and *Delete Recipe* buttons are displayed, all data fields are proparly displayed.
+
+    <img src="static/images/testing/profile-page-testing.jpg" alt="Profile page displayed for logged in users" width="700px" height="auto">
+
+### Add New Recipe
+
+  - When clicking the button *Add New Recipe*, the user can fill in the form to create a new recipe.
+  - The dropdown menu with categories is functioning well.
+  - The input fields have helper messages.
+  - When the input field is filled in correctly, the green text message appears; when the input field is filled in incorrectly, the red text appears.
+  - If the submit button *Add Recipe* is clicked, the new recipe will be added to the database (MongoDB), will appear in your *Profile* and on the *All Recipes* page (and will be available for other users to view).
+  - If the button *Cancel* is clicked, the user will be redirected back to his *Profile* page.
+    <img src="static/images/testing/add-new-recipe-form.jpg" alt="Add New Recipe form testing" width="500px" height="auto">
+  
+
 ### Flash messages
 
 ### Search
