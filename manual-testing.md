@@ -144,4 +144,10 @@ Functionality, Usability and Responsiveness of the key website elements were tes
 
 ### Search
 
-  
+  - The Search function is placed on the *All Recipes* page.
+
+  - The Search function is targeting a category name, recipe name and ingredients within the recipes collection. In the image below the search result for *Dessert" is demostrated.
+
+  - If the user clicks the *Reset* button, the page reloads.
+
+    <img src="static/images/testing/search-result.jpg" alt="Search result for 'dessert'" width="700px" height="auto">
