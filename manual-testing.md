@@ -106,9 +106,9 @@ Functionality, Usability and Responsiveness of the key website elements were tes
   
 ### Edit Recipe
 
-  - If the logged in user click *Edit Recipe* button, he will be redirected to *Edit Recipe* page. 
+  - If the logged in user click *Edit Recipe* button, the user will be redirected to *Edit Recipe* page. 
   - The form is prefilled with the recipe data correctly.
-  - The user can make changes and click the *Save Changes* button. The data is modified in the database and can be seen in a recipe card.
+  - The user can make changes and click the *Save Changes* button. The data is modified in the database and can be seen in a recipe card. The flash message will appear "Recipe Successfully Updated".
   - If the user click *Cancel* button, the user is redirected to the *Profile* page.
 
     <img src="static/images/testing/edit-recipe-form.jpg" alt="Edit Recipe form testing" width="500px" height="auto">
