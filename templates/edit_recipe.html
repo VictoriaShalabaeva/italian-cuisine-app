@@ -82,18 +82,18 @@
                     line </span>
             </div>
         </div>
-    </form>
-    <!-- submit and cancel buttons -->
-    <div class="row">
-        <div class="col s12 center-align">
-            <button type="submit" class="btn-large grey darken-3 text-shadow">
-                Save Changes <i class="fas fa-edit right"></i>
-            </button>
-            <a href="{{ url_for('profile', username=session['user']) }}" class="btn-large grey darken-3 text-shadow">
-                Cancel <i class="fas fa-times-circle right"></i>
-            </a>
+        <!-- submit and cancel buttons -->
+        <div class="row">
+            <div class="col s12 center-align">
+                <button type="submit" class="btn-large grey darken-3 text-shadow">
+                    Save Changes <i class="fas fa-edit right"></i>
+                </button>
+                <a href="{{ url_for('profile', username=session['user']) }}" class="btn-large grey darken-3 text-shadow">
+                    Cancel <i class="fas fa-times-circle right"></i>
+                </a>
+            </div>
         </div>
-    </div>
+    </form>
 </div>
 
 {% endblock %}

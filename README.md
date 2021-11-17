@@ -51,7 +51,7 @@ The website is designed to be responsive and accessible on a range of devices, m
 
 ### Existing Features
 
-- The website is responsive on many device sizes (down to 280 px).
+- The website is responsive on many device sizes (down to 320 px).
 
 - The website allows users to Create, Read, Update and Delete recipes. This displays full CRUD functionailty.
 
@@ -234,7 +234,6 @@ The manual testing is described [Here](manual-testing.md).
     - iPhone X (375 x 812)
     - Galaxy S5 (360 x 640)
     - iPhone 5/SE (320 x 568)
-    - Galaxy Fold (280 x 653)
 
 - Devices physically tested include:
 
