@@ -207,7 +207,7 @@ nav .brand-logo {
 
 @media screen and (max-width: 330px) {
     .card .card-title {
-        font-size: 18px;
+        font-size: 16px;
     }
     .title {
         margin-top: 10px;
@@ -366,7 +366,7 @@ input #recipe_name .validate .valid {
     .btn-large {
         height: 40px;
         line-height: 40px;
-        font-size: 14px;
+        font-size: 13px;
         padding: 0 8px;
     }
 }

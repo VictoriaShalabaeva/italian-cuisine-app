@@ -223,7 +223,6 @@ The manual testing is described [Here](manual-testing.md).
     - 1600 x 992
     - 1440 x 900
     - 1366 x 768
-    - 1280 x 800
     - Nexus 10 (800 x 1280)
     - iPad (768 x 1024)
     - Surface Duo (540 x 720)
@@ -296,7 +295,13 @@ The manual testing is described [Here](manual-testing.md).
 
   <img src="static/images/bugs/autocomplete-white-bug.jpg" alt="Autocomplete form input background." width="700px" height="auto">
 
-2. 
+2. The background image on real mobile devices has issues:
+    
+    - On Huawei Mate 20, the background image slightly jumps due to an appearing/disappearing address bar. 
+
+    - On iPhone XR, the background image (instead of jumping) creates white spaces when the address bar appears/dissapear. Secondly, the background image on *All Recipes* and *Profile* page is stretched out taking all the page lenth which makes the image have poor resolution. In Chrome DevTools mobile simulations, the background image is fixed while scrolling and takes the height of the view port.
+
+    <img src="static/images/bugs/background-image-bug.jpg" alt="Background image bug on physically tested mobile devices." width="200px" height="auto">
         
 ## Deployment
 
