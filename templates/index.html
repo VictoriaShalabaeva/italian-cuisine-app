@@ -2,30 +2,30 @@
 {% block content %}
 
 <div class="container">
-   <div class="row">
-      <div class="col s12" id="jumbotron-card-padding">
-         <div class="card jumbotron-card">
-            <div class="card-content white-text card-content-padding">
-               <div class="card-title logo center">
-                  <h1>Buon Appetito</h1>
-               </div>
-               <p class="hometext center-align" id="p-margin-bottom">Welcome to <span class="italic">Buon Appetito</span>!</p>
-               <p class="hometext center-align">The Italian Cuisine App to find, share and store new Italian recipes!</p>
+    <div class="row">
+        <div class="col s12" id="jumbotron-card-padding">
+            <div class="card jumbotron-card">
+                <div class="card-content white-text card-content-padding">
+                    <div class="card-title logo center">
+                        <h1>Buon Appetito</h1>
+                    </div>
+                    <p class="hometext center-align" id="p-margin-bottom">Welcome to <span class="italic">Buon Appetito</span>!</p>
+                    <p class="hometext center-align">The Italian Cuisine App to find, share and store new Italian recipes!</p>
+                </div>
+                {% if session.user %}
+                <div class="card-action center card-action-padding">
+                    <a href="{{ url_for('get_recipes') }}" class="white-text grey darken-3 waves-effect waves-light btn">View All Recipes</a>
+                </div>
+                {% else %}
+                <div class="card-action center card-action-padding card-action-btn-padding">
+                    <a href="{{ url_for('get_recipes') }}" class="white-text grey darken-3 waves-effect waves-light btn">View All Recipes</a>
+                    <a href="{{ url_for('login') }}" class="white-text grey darken-3 waves-effect waves-light btn">Log In</a>
+                    <a href="{{ url_for('register') }}" class="white-text grey darken-3 waves-effect waves-light btn">Register</a>
+                </div>
+                {% endif %}
             </div>
-            {% if session.user %}
-            <div class="card-action center card-action-padding">
-               <a href="{{ url_for('get_recipes') }}" class="white-text grey darken-3 waves-effect waves-light btn">View All Recipes</a>
-            </div>
-            {% else %}
-            <div class="card-action center card-action-padding card-action-btn-padding">
-               <a href="{{ url_for('get_recipes') }}" class="white-text grey darken-3 waves-effect waves-light btn">View All Recipes</a>
-               <a href="{{ url_for('login') }}" class="white-text grey darken-3 waves-effect waves-light btn">Log In</a>
-               <a href="{{ url_for('register') }}" class="white-text grey darken-3 waves-effect waves-light btn">Register</a>
-            </div>
-            {% endif %}
-         </div>
-      </div>
-   </div>
+        </div>
+    </div>
 </div>
 
 {% endblock %}

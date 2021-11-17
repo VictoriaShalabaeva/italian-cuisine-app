@@ -1,102 +1,99 @@
 {% extends "base.html" %}
 {% block content %}
 
-    <div class="row card-panel login-card card-margin-top card-width card-panel-padding">
-        <h3 class="white-text center-align title">Edit Recipe</h3>
-        <form class="col s12" method="POST" action="{{ url_for('edit_recipe', recipe_id=recipe._id) }}">
-            <!-- category selection -->
-            <div class="row">
-				<div class="input-field col s12">
-                    <i class="fas fa-folder-open prefix grey-text text-lighten-2"></i>
-					<select id="category_name" name="category_name" class="validate" required>
-                        <option value="" disabled>Choose Category</option>
-                        {% for category in categories %}
-                            {% if category.category_name == recipe.category_name %}
-                                <option value="{{ category.category_name }}" selected>{{ category.category_name }}</option>
-                            {% else %}
-                                <option value="{{ category.category_name }}">{{ category.category_name }}</option>
-                            {% endif %}
-                        {% endfor %}
-                    </select>
-					<label for="category_name">Category</label>
-				</div>
-			</div>
-            <!-- recipe name -->
-            <div class="row">
-                <div class="input-field col s12">
-                    <i class="fas fa-solid fa-pizza-slice prefix grey-text text-lighten-2"></i>
-                    <input id="recipe_name" name="recipe_name" minlength="3" maxlength="50"
-                        type="text" class="validate" value="{{ recipe.recipe_name }}" required>
-                    <label for="recipe_name">Recipe Name</label>
-                    <span class="helper-text" data-error="Please fill out this field" data-success="Great!"></span>
-                </div>
-            </div>
-            <!-- image url -->
-            <div class="row">
-                <div class="input-field col s12">
-                    <i class="fas fa-images prefix grey-text text-lighten-2"></i>
-                    <input id="image_url" name="image_url" minlength="6" type="url" class="validate" value="{{ recipe.image_url }}" required>
-                    <label for="image_url">Image URL</label>
-                    <span class="helper-text" data-error="Please provide a valid image URL" data-success="Great!">Please find an image of your choice
-                        on google images, right click and copy image address</span>
-                </div>
-            </div>
-            <!-- time -->
-            <div class="row">
-                <div class="input-field col s12">
-                    <i class="fas fa-solid fa-hourglass-start prefix grey-text text-lighten-2"></i>
-                    <input id="time" name="time" maxlength="50"
-                        type="text" class="validate" value="{{ recipe.time }}" required>
-                    <label for="time">Time</label>
-                    <span class="helper-text" data-error="Please fill out this field" data-success="Great!"></span>
-                </div>
-            </div>
-            <!-- servings -->
-            <div class="row">
-                <div class="input-field col s12">
-                    <i class="fas fa-solid fa-person prefix grey-text text-lighten-2"></i>
-                    <input id="servings" name="servings" maxlength="50"
-                        type="text" class="validate" value="{{ recipe.servings }}" required>
-                    <label for="servings">Servings</label>
-                    <span class="helper-text"data-success="Great!">Please insert a number from 1 to 99</span>
-                </div>
-            </div>
-            <!-- ingredients -->
-            <div class="row">
-                <div class="input-field col s12">
-                    <i class="fas fa-solid fa-carrot prefix grey-text text-lighten-2"></i>
-                    <textarea id="ingredients" name="ingredients" minlength="3" class="materialize-textarea validate" required>
-                        {{- recipe.ingredients|join('\n') -}}
-                    </textarea>
-                    <label for="ingredients">Ingredients</label>
-                    <span class="helper-text" data-error="Wrong" data-success="Great!"> Please write every ingredient on
-                        a new line </span>
-                </div>
-            </div>
-            <!-- preparation -->
-            <div class="row">
-                <div class="input-field col s12">
-                    <i class="fas fa-align-left prefix grey-text text-lighten-2"></i>
-                    <textarea id="preparation" name="preparation" minlength="3" class="materialize-textarea validate" required>
-                        {{- recipe.preparation|join('\n') -}}
-                    </textarea>
-                    <label for="preparation">Preparation</label>
-                    <span class="helper-text" data-error="Wrong" data-success="Great!"> Please write every preparation step on a new
-                        line </span>
-                </div>
-            </div>
-        </form>
-        <!-- submit and cancel buttons -->
+<div class="row card-panel login-card card-margin-top card-width card-panel-padding">
+    <h3 class="white-text center-align title">Edit Recipe</h3>
+    <form class="col s12" method="POST" action="{{ url_for('edit_recipe', recipe_id=recipe._id) }}">
+        <!-- category selection -->
         <div class="row">
-            <div class="col s12 center-align">
-                <button type="submit" class="btn-large grey darken-3 text-shadow">
-                    Save Changes <i class="fas fa-edit right"></i>
-                </button>
-                <a href="{{ url_for('profile', username=session['user']) }}" class="btn-large grey darken-3 text-shadow">
-                    Cancel <i class="fas fa-times-circle right"></i>
-                </a>
+            <div class="input-field col s12">
+                <i class="fas fa-folder-open prefix grey-text text-lighten-2"></i>
+                <select id="category_name" name="category_name" class="validate" required>
+                    <option value="" disabled>Choose Category</option>
+                    {% for category in categories %}
+                    {% if category.category_name == recipe.category_name %}
+                    <option value="{{ category.category_name }}" selected>{{ category.category_name }}</option>
+                    {% else %}
+                    <option value="{{ category.category_name }}">{{ category.category_name }}</option>
+                    {% endif %}
+                    {% endfor %}
+                </select>
+                <label for="category_name">Category</label>
             </div>
         </div>
+        <!-- recipe name -->
+        <div class="row">
+            <div class="input-field col s12">
+                <i class="fas fa-solid fa-pizza-slice prefix grey-text text-lighten-2"></i>
+                <input id="recipe_name" name="recipe_name" minlength="3" maxlength="50" type="text" class="validate" value="{{ recipe.recipe_name }}" required>
+                <label for="recipe_name">Recipe Name</label>
+                <span class="helper-text" data-error="Please fill out this field" data-success="Great!"></span>
+            </div>
+        </div>
+        <!-- image url -->
+        <div class="row">
+            <div class="input-field col s12">
+                <i class="fas fa-images prefix grey-text text-lighten-2"></i>
+                <input id="image_url" name="image_url" minlength="6" type="url" class="validate" value="{{ recipe.image_url }}" required>
+                <label for="image_url">Image URL</label>
+                <span class="helper-text" data-error="Please provide a valid image URL" data-success="Great!">Please find an image of your choice
+                    on google images, right click and copy image address</span>
+            </div>
+        </div>
+        <!-- time -->
+        <div class="row">
+            <div class="input-field col s12">
+                <i class="fas fa-solid fa-hourglass-start prefix grey-text text-lighten-2"></i>
+                <input id="time" name="time" maxlength="50" type="text" class="validate" value="{{ recipe.time }}" required>
+                <label for="time">Time</label>
+                <span class="helper-text" data-error="Please fill out this field" data-success="Great!"></span>
+            </div>
+        </div>
+        <!-- servings -->
+        <div class="row">
+            <div class="input-field col s12">
+                <i class="fas fa-solid fa-person prefix grey-text text-lighten-2"></i>
+                <input id="servings" name="servings" maxlength="50" type="text" class="validate" value="{{ recipe.servings }}" required>
+                <label for="servings">Servings</label>
+                <span class="helper-text" data-success="Great!">Please insert a number from 1 to 99</span>
+            </div>
+        </div>
+        <!-- ingredients -->
+        <div class="row">
+            <div class="input-field col s12">
+                <i class="fas fa-solid fa-carrot prefix grey-text text-lighten-2"></i>
+                <textarea id="ingredients" name="ingredients" minlength="3" class="materialize-textarea validate" required>
+                {{- recipe.ingredients|join('\n') -}}
+                </textarea>
+                <label for="ingredients">Ingredients</label>
+                <span class="helper-text" data-error="Wrong" data-success="Great!"> Please write every ingredient on
+                    a new line </span>
+            </div>
+        </div>
+        <!-- preparation -->
+        <div class="row">
+            <div class="input-field col s12">
+                <i class="fas fa-align-left prefix grey-text text-lighten-2"></i>
+                <textarea id="preparation" name="preparation" minlength="3" class="materialize-textarea validate" required>
+                {{- recipe.preparation|join('\n') -}}
+                </textarea>
+                <label for="preparation">Preparation</label>
+                <span class="helper-text" data-error="Wrong" data-success="Great!"> Please write every preparation step on a new
+                    line </span>
+            </div>
+        </div>
+    </form>
+    <!-- submit and cancel buttons -->
+    <div class="row">
+        <div class="col s12 center-align">
+            <button type="submit" class="btn-large grey darken-3 text-shadow">
+                Save Changes <i class="fas fa-edit right"></i>
+            </button>
+            <a href="{{ url_for('profile', username=session['user']) }}" class="btn-large grey darken-3 text-shadow">
+                Cancel <i class="fas fa-times-circle right"></i>
+            </a>
+        </div>
     </div>
+</div>
 
 {% endblock %}

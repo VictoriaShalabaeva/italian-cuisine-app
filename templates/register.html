@@ -1,44 +1,42 @@
 {% extends "base.html" %}
 {% block content %}
 
-    <div class="container">
-        <form class="col s12 m8 offset-m2" method="POST" action="{{ url_for('register') }}">
-            <div class="card-panel login-card">
-                <h3 class="white-text center-align title">Register</h3>
-                <!-- username -->
-                <div class="row">
-					<div class="input-field col s12">
-						<i class="fas fa-user-plus prefix white-text"></i>
-						<input id="username" name="username" type="text" minlength="5"
-                            maxlength="15" pattern="^[a-zA-Z0-9]{5,15}$" class="validate" title="Username should have between 5 to 15 characters, can contain numbers, lower and uppercase letters. Special characters are not allowed." required>
-						<label for="username">Username</label>
-					</div>
-                </div>
-                <!-- passowrd -->
-                <div class="row">
-                    <div class="input-field col s12">
-						<i class="fas fa-user-lock prefix white-text"></i>
-                        <input id="password" name="password" type="password" minlength="5"
-                            maxlength="15" pattern="^[a-zA-Z0-9]{5,15}$" class="validate" title="Password should have between 5 to 15 characters, can contain numbers, lower and uppercase letters. Special characters are not allowed." required>
-                        <label for="password">Password</label>
-                    </div>
-                </div>
-                <!-- register -->
-                <div class="row">
-                    <button type="submit" class="col s12 btn-large grey darken-3 waves-effect waves-light">
-                        Register <i class="fas fa-sign-in-alt"></i>
-                    </button>
-                </div>
-                <div class="row">
-                    <div class="col s12">
-                        <p class="center-align new-here white-text">
-                            Already Registered?
-                            <a href="{{ url_for('login') }}">Log In</a>
-                        </p>
-                    </div>
+<div class="container">
+    <form class="col s12 m8 offset-m2" method="POST" action="{{ url_for('register') }}">
+        <div class="card-panel login-card">
+            <h3 class="white-text center-align title">Register</h3>
+            <!-- username -->
+            <div class="row">
+                <div class="input-field col s12">
+                    <i class="fas fa-user-plus prefix white-text"></i>
+                    <input id="username" name="username" type="text" minlength="5" maxlength="15" pattern="^[a-zA-Z0-9]{5,15}$" class="validate" title="Username should have between 5 to 15 characters, can contain numbers, lower and uppercase letters. Special characters are not allowed." required>
+                    <label for="username">Username</label>
                 </div>
             </div>
-        </form>
-    </div>
+            <!-- passowrd -->
+            <div class="row">
+                <div class="input-field col s12">
+                    <i class="fas fa-user-lock prefix white-text"></i>
+                    <input id="password" name="password" type="password" minlength="5" maxlength="15" pattern="^[a-zA-Z0-9]{5,15}$" class="validate" title="Password should have between 5 to 15 characters, can contain numbers, lower and uppercase letters. Special characters are not allowed." required>
+                    <label for="password">Password</label>
+                </div>
+            </div>
+            <!-- register -->
+            <div class="row">
+                <button type="submit" class="col s12 btn-large grey darken-3 waves-effect waves-light">
+                    Register <i class="fas fa-sign-in-alt"></i>
+                </button>
+            </div>
+            <div class="row">
+                <div class="col s12">
+                    <p class="center-align new-here white-text">
+                        Already Registered?
+                        <a href="{{ url_for('login') }}">Log In</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
 
 {% endblock %}
