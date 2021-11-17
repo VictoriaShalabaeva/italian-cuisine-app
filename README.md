@@ -184,11 +184,7 @@ The website is designed to be responsive and accessible on a range of devices, m
 
     Chrome DevTools was used to inspect and modify the website code.
 
-23. [Lighthouse](https://developers.google.com/web/tools/lighthouse)
-
-    Lighthouse was used to assess performance, accessibility, SEO and best practices.
-
-24. [PEP8 online](http://pep8online.com/)
+23. [PEP8 online](http://pep8online.com/)
 
     PEP8 online was used to check a code for PEP8 requirements.
 
@@ -300,6 +296,8 @@ The manual testing is described [Here](manual-testing.md).
 1. The form input autocomplete field has a white background that does not match well with the page styling. I did not manage to target that particular element to change the colour. However, the background colour of the form input in general has been modified succsefully: when the input is introduced for the first time and autocomplete does not work, the background is transperent (as it meant to be).
 
   <img src="static/images/bugs/autocomplete-white-bug.jpg" alt="Autocomplete form input background." width="700px" height="auto">
+
+2. 
         
 ## Deployment
 

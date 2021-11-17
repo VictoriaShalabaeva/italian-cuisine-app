@@ -105,7 +105,6 @@ def login():
 def profile(username):
     """Navigate to Profile page."""
     username = mongo.db.users.find_one(
-        """grab the session user's username from db"""
         {"username": session["user"]})["username"]
 
     if session["user"]:
