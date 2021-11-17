@@ -44,6 +44,12 @@ main {
     margin-bottom: 0;
 }
 
+@media screen and (max-width: 500px) {
+    .flashes {
+        font-size: 20px;
+    }
+}
+
 
 /*------------------- Navbar */
 
