@@ -19,39 +19,39 @@ app.config["MONGO_DBNAME"] = os.environ.get("MONGO_DBNAME")
 app.config["MONGO_URI"] = os.environ.get("MONGO_URI")
 app.secret_key = os.environ.get("SECRET_KEY")
 
+
 mongo = PyMongo(app)
 
 
-"""Route decorator to navigate to Home page."""
 @app.route("/")
 @app.route("/index")
 def index():
+    """Navigate to Home page."""
     return render_template("index.html")
 
 
-"""Route decorator to navigate to All Recipes page.
-
-Retrieves recipes data from MongoDB.
-"""   
 @app.route("/get_recipes")
 def get_recipes():
+    """Navigate to All Recipes page.
+    Retrieve recipes data from MongoDB.
+    """
     recipes = list(mongo.db.recipes.find())
     return render_template("all_recipes.html", recipes=recipes)
 
 
-"""Route decorator to allows users to search for recipes."""
 @app.route("/search", methods=["GET", "POST"])
 def search():
+    """Allow users to search for recipes."""
     query = request.form.get("query")
     recipes = list(mongo.db.recipes.find({"$text": {"$search": query}}))
     return render_template("all_recipes.html", recipes=recipes)
 
 
-"""Route decorator for user registration."""
 @app.route("/register", methods=["GET", "POST"])
 def register():
+    """Allow users to register an account."""
     if request.method == "POST":
-        # check if username already exists in db
+        """Check if username already exists in db"""
         existing_user = mongo.db.users.find_one(
             {"username": request.form.get("username").lower()})
 
@@ -65,7 +65,7 @@ def register():
         }
         mongo.db.users.insert_one(register)
 
-        # put the new user into 'session' cookie
+        """Put the new user into 'session' cookie"""
         session["user"] = request.form.get("username").lower()
         flash("Registration Successful!")
         return redirect(url_for("profile", username=session["user"]))
@@ -73,42 +73,43 @@ def register():
     return render_template("register.html")
 
 
-"""Route decorator for user login."""
 @app.route("/login", methods=["GET", "POST"])
 def login():
+    """Allow users to login."""
     if request.method == "POST":
-        # check if username exists in db
+        """Check if username exists in db"""
         existing_user = mongo.db.users.find_one(
             {"username": request.form.get("username").lower()})
 
         if existing_user:
-            # ensure hashed password matches user input
+            """Ensure hashed password matches user input"""
             if check_password_hash(
-                existing_user["password"], request.form.get("password")):
-                    session["user"] = request.form.get("username").lower()
-                    return redirect(url_for("profile", username=session["user"]))
+                    existing_user["password"], request.form.get("password")):
+                session["user"] = request.form.get("username").lower()
+                return redirect(
+                    url_for("profile", username=session["user"]))
             else:
-                # invalid password match
+                """Invalid password match"""
                 flash("Incorrect Username and/or Password")
                 return redirect(url_for("login"))
 
         else:
-            # username doesn't exist
+            """Username doesn't exist"""
             flash("Incorrect Username and/or Password")
             return redirect(url_for("login"))
 
     return render_template("login.html")
 
 
-"""Route decorator to navigate to Profile page."""
 @app.route("/profile/<username>", methods=["GET", "POST"])
 def profile(username):
-    # grab the session user's username from db
+    """Navigate to Profile page."""
     username = mongo.db.users.find_one(
+        """grab the session user's username from db"""
         {"username": session["user"]})["username"]
 
     if session["user"]:
-        # display all recipies added by that user
+        """Display all recipes added by that user"""
         user = mongo.db.users.find_one({"username": session['user']})
         recipes = mongo.db.recipes.find({"created_by": session['user']})
         recipes = list(recipes)
@@ -120,18 +121,19 @@ def profile(username):
         return redirect(url_for("login"))
 
 
-"""Route decorator for user logout."""
 @app.route("/logout")
 def logout():
-    # remove user from session cookie
+    """Allow users to logout.
+    Remove user from session cookie.
+    """
     flash("You have been logged out")
     session.pop("user")
     return redirect(url_for("login"))
 
 
-"""Route decorator to add new recipe."""
 @app.route("/add_new_recipe", methods=["GET", "POST"])
 def add_new_recipe():
+    """Allow users to add a new recipe."""
     if "user" not in session:
         return redirect(url_for("login"))
 
@@ -154,10 +156,9 @@ def add_new_recipe():
     return render_template("add_new_recipe.html", categories=categories)
 
 
-"""Route decorator to edit recipe."""
 @app.route("/edit_recipe/<recipe_id>", methods=["GET", "POST"])
 def edit_recipe(recipe_id):
-
+    """Allow users to edit a recipe."""
     if "user" not in session:
         return redirect(url_for("login"))
 
@@ -183,16 +184,15 @@ def edit_recipe(recipe_id):
         flash("Recipe Successfully Updated")
         return redirect(url_for("profile", username=session["user"]))
 
-
     recipe = mongo.db.recipes.find_one({"_id": ObjectId(recipe_id)})
     categories = mongo.db.categories.find().sort("category_name", 1)
-    return render_template("edit_recipe.html", recipe=recipe, categories=categories)
+    return render_template(
+        "edit_recipe.html", recipe=recipe, categories=categories)
 
 
-"""Route decorator to delete recipe."""
 @app.route("/delete_recipe/<recipe_id>")
 def delete_recipe(recipe_id):
-    
+    """Allow users to delete a recipe."""
     if "user" not in session:
         return redirect(url_for("login"))
 
@@ -206,23 +206,22 @@ def delete_recipe(recipe_id):
     mongo.db.recipes.remove({"_id": ObjectId(recipe_id)})
     flash("Recipe Successfully Deleted")
     return redirect(url_for("profile", username=session["user"]))
-    
 
-"""Handling error 404 and displaying a custom 404 error page.
 
-Code credit: https://flask.palletsprojects.com/en/1.1.x/patterns/errorpages/
-"""
 @app.errorhandler(404)
 def page_not_found(e):
+    """Handle error 404 and display a custom 404 error page.
+    Code credit: https:
+    //flask.palletsprojects.com/en/1.1.x/patterns/errorpages/
+    """
     return render_template('404.html'), 404
 
 
-"""Handling error 500 and displaying custom 500 error page.
-
-Code credit: https://flask.palletsprojects.com/en/2.0.x/errorhandling/
-"""
 @app.errorhandler(500)
 def internal_server_error(e):
+    """Handle error 500 and display custom 500 error page.
+    Code credit: https://flask.palletsprojects.com/en/2.0.x/errorhandling/
+    """
     return render_template('500.html'), 500
 
 

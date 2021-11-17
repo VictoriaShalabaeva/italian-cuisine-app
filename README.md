@@ -18,10 +18,6 @@ The website is designed to be responsive and accessible on a range of devices, m
     - I want to be able to create my own recipes and store them in my profile. 
     - I want to orgnize my recipes (to create, edit or delete recipes).
     - I want to share my own recipes with others.
-
-  - **As an owner of a website**
-
-    - I want to promote the products. 
       
 ### Design
 
@@ -81,7 +77,6 @@ The website is designed to be responsive and accessible on a range of devices, m
 - a *Scroll to top* button
 
 - contact page
-
 
 ## Technologies Used
 
@@ -205,7 +200,11 @@ The W3C Markup Validator, W3C CSS Validator and JSHint Services were used to val
 - [W3C CSS Validator](https://jigsaw.w3.org/css-validator/). Please see results in W3C CSS Validator:
 
   <img src="static/images/testing/w3c-css-validator.jpg" alt="Result in W3C CSS Validator." width="500px" height="auto">
+
 - [JSHint](https://jshint.com/) did not detect any problem in JavaScript codes.
+- [PEP8 online](http://pep8online.com/). Please see results in PEP8 online validator:
+
+  <img src="static/images/testing/pep8-online.jpg" alt="Result in PEP8 online validator." width="500px" height="auto">
 
 ### Testing User Stories from User Experience (UX) Section
 
