@@ -302,6 +302,8 @@ The manual testing is described [Here](manual-testing.md).
     - On iPhone XR, the background image (instead of jumping) creates white spaces when the address bar appears/dissapear. Secondly, the background image on *All Recipes* and *Profile* page is stretched out taking all the page lenth which makes the image have poor resolution. In Chrome DevTools mobile simulations, the background image is fixed while scrolling and takes the height of the view port.
 
     <img src="static/images/bugs/background-image-bug.jpg" alt="Background image bug on physically tested mobile devices." width="200px" height="auto">
+
+3. The fallback image for recipes cards takes a few seconds to load.
         
 ## Deployment
 
