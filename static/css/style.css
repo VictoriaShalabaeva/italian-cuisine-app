@@ -7,9 +7,14 @@ body {
     background-position: center;
     background-size: cover;
     font-family: "Roboto", sans-serif;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     min-height: 100vh;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 
 @media screen and (max-width: 600px) {
@@ -19,12 +24,15 @@ body {
 }
 
 main {
-    flex: 1 0 auto;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 auto;
+            flex: 1 0 auto;
 }
 
 .row {
     width: 100%;
 }
+
 
 /*------------- Flash messages */
 
@@ -35,6 +43,7 @@ main {
 .flashes {
     margin-bottom: 0;
 }
+
 
 /*------------------- Navbar */
 
@@ -59,6 +68,7 @@ nav .brand-logo {
     font-family: 'Dancing Script', cursive;
 }
 
+
 /*----------- Card on Home page */
 
 .card-title h1 {
@@ -69,7 +79,6 @@ nav .brand-logo {
     .card-title h1 {
         font-size: 3rem;
     }
-
     #jumbotron-card-padding {
         padding-left: 0;
         padding-right: 0;
@@ -135,11 +144,11 @@ nav .brand-logo {
         padding-top: 20px;
         padding-bottom: 20px;
     }
-
     .card .card-content-padding {
         padding-bottom: 50px;
     }
 }
+
 
 /* -----------------------------Footer */
 
@@ -147,6 +156,7 @@ nav .brand-logo {
     padding-top: 0;
     background-color: rgba(12, 12, 12, 0.7);
 }
+
 
 /* ----------------------All Recipes page */
 
@@ -189,7 +199,6 @@ nav .brand-logo {
     .card-margin-top {
         margin-top: 50px;
     }
-
     .title {
         margin-top: 10px;
         font-size: 34px;
@@ -200,7 +209,6 @@ nav .brand-logo {
     .card .card-title {
         font-size: 18px;
     }
-
     .title {
         margin-top: 10px;
         font-size: 32px;
@@ -213,6 +221,7 @@ nav .brand-logo {
     }
 }
 
+
 /* -----------------------------Login page */
 
 .login-card {
@@ -223,11 +232,13 @@ nav .brand-logo {
     margin-bottom: 0;
 }
 
+
 /* -----------------------------Profile page */
 
 .add-new-recipe-btn {
     margin-bottom: 40px;
 }
+
 
 /* ----------------------Add new recipe page */
 
@@ -235,42 +246,57 @@ nav .brand-logo {
     width: 100%;
 }
 
+
 /* label color */
+
 .input-field label {
     color: #e0e0e0;
 }
 
+
 /* label focus color */
+
 .input-field input[type=text]:focus+label,
 .input-field textarea[type=text]:focus+label {
     color: #e0e0e0;
 }
 
+
 /* label underline focus color */
+
 .input-field input[type=text]:focus,
 .input-field textarea[type=text]:focus {
     border-bottom: 1px solid #e0e0e0;
-    box-shadow: 0 1px 0 0 #e0e0e0;
+    -webkit-box-shadow: 0 1px 0 0 #e0e0e0;
+            box-shadow: 0 1px 0 0 #e0e0e0;
     color: #e0e0e0;
 }
 
+
 /* valid color */
+
 .input-field input[type=text].valid,
 .input-field textarea[type=text].valid {
     border-bottom: 1px solid #e0e0e0;
-    box-shadow: 0 1px 0 0 #e0e0e0;
+    -webkit-box-shadow: 0 1px 0 0 #e0e0e0;
+            box-shadow: 0 1px 0 0 #e0e0e0;
     color: #e0e0e0;
 }
 
+
 /* invalid color */
+
 .input-field input[type=text].invalid,
 .input-field textarea[type=text].invalid {
     border-bottom: 1px solid #e0e0e0;
-    box-shadow: 0 1px 0 0 #e0e0e0;
+    -webkit-box-shadow: 0 1px 0 0 #e0e0e0;
+            box-shadow: 0 1px 0 0 #e0e0e0;
     color: #e0e0e0;
 }
 
+
 /* icon prefix focus color */
+
 .input-field .prefix.active {
     color: #e0e0e0;
 }
@@ -304,7 +330,6 @@ textarea.materialize-textarea {
 }
 
 @media screen and (max-width: 500px) {
-
     .input-field .helper-text,
     .dropdown-content li>a,
     .dropdown-content li>span,
@@ -360,4 +385,3 @@ input #recipe_name .validate .valid {
         padding: 0 6px;
     }
 }
-
