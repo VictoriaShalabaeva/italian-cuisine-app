@@ -1,4 +1,5 @@
 /**
+ * MaterializeCSS initialization.
  * Code credit: the code is written following the Code Institute tutorial.
  */
 
@@ -8,6 +9,9 @@ $(document).ready(function(){
     $("select").formSelect(); // form select element initialization
     $('.modal').modal(); // modal initialization
 
+    /**
+     * Fix the validation requirements for Materialize select elements.
+     */
     validateMaterializeSelect();
     function validateMaterializeSelect() {
         let classValid = { "border-bottom": "1px solid #4caf50", "box-shadow": "0 1px 0 0 #4caf50" };
@@ -34,4 +38,9 @@ $(document).ready(function(){
     }
 });
 
-$("#copyright").text(new Date().getFullYear()); // gets the current year automatically
+
+/**
+ * Gets the current year automatically.
+ * Code credit: the code is written following the Code Institute tutorial.
+ */
+$("#copyright").text(new Date().getFullYear());
