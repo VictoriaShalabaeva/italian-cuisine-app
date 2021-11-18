@@ -28,7 +28,7 @@
 
     <img src="static/images/testing/add-new-recipe.jpg" alt="Add new recipe page." width="500px" height="auto">
 
-## I want to organize my recipes (to create, edit or delete recipes).
+## I want to organize my recipes (to create, edit and delete recipes).
   
   - Once a new recipe is added to the profile, there is a possibility to edit or delete it.
 
