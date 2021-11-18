@@ -16,7 +16,7 @@ The website is designed to be responsive and accessible on a range of devices, m
 
     - I want to search for different recipes and get inspiration to try something new.
     - I want to be able to create my own recipes and store them in my profile. 
-    - I want to orgnize my recipes (to create, edit and delete recipes).
+    - I want to organize my recipes (to create, edit and delete recipes).
     - I want to share my own recipes with others.
       
 ### Design
@@ -53,7 +53,7 @@ The website is designed to be responsive and accessible on a range of devices, m
 
 - The website is responsive on many device sizes (down to 320 px).
 
-- The website allows users to Create, Read, Update and Delete recipes. This displays full CRUD functionailty.
+- The website allows users to Create, Read, Update and Delete recipes. This displays full CRUD functionality.
 
 - Any user can:
 
@@ -69,11 +69,11 @@ The website is designed to be responsive and accessible on a range of devices, m
 
 - Recipes rating.
 
-- The posibility to leave a comment on a recipe.
+- The possibility to leave a comment on a recipe.
 
 - Admin login functionality to edit or delete recipes added by other users (in case of incorrect or inappropriate information). At the moment, the recipes correction of other users are done by accessing the data in MongoDB.
 
-- Advertisment integration (to promote any branded product in the recipes description).
+- Advertisement integration (to promote any branded product in the recipes description).
 
 - A *Scroll to top* button.
 
@@ -111,7 +111,7 @@ The website is designed to be responsive and accessible on a range of devices, m
    
 4. [Flask:](https://flask.palletsprojects.com/en/2.0.x/)
 
-   Flask was used as a framework to develope a web application.
+   Flask was used as a framework to develop a web application.
 
 5. [Jinja:](https://jinja.palletsprojects.com/en/3.0.x/)
 
@@ -119,7 +119,7 @@ The website is designed to be responsive and accessible on a range of devices, m
 
 6. [PyMongo:](https://pymongo.readthedocs.io/en/stable/)
 
-   PyMongo was used to to work with MongoDB from Python.
+   PyMongo was used to work with MongoDB from Python.
 
 7. [Werkzeug:](https://pypi.org/project/Werkzeug/)
 
@@ -127,7 +127,7 @@ The website is designed to be responsive and accessible on a range of devices, m
 
 8. [jQuery:](https://jquery.com/)
 
-   jQuery was used in JavaScript codes to add functionality to materialize compontents.
+   jQuery was used in JavaScript codes to add functionality to materialize components.
 
 9. [Git:](https://git-scm.com/)
 
@@ -293,7 +293,7 @@ The manual testing is described [Here](manual-testing.md).
 
 #### Existing bugs
 
-1. The form input autocomplete field has a white background that does not match well with the page styling. I did not manage to target that particular element to change the colour. However, the background colour of the form input in general has been modified succsefully: when the input is introduced for the first time and autocomplete does not work, the background is transperent (as it meant to be).
+1. The form input autocomplete field has a white background that does not match well with the page styling. I did not manage to target that particular element to change the colour. However, the background colour of the form input in general has been modified successfully: when the input is introduced for the first time and autocomplete does not work, the background is transparent (as it meant to be).
 
     <img src="static/images/bugs/autocomplete-white-bug.jpg" alt="Autocomplete form input background." width="700px" height="auto">
 
@@ -301,11 +301,11 @@ The manual testing is described [Here](manual-testing.md).
     
     - On Huawei Mate 20, the background image slightly jumps due to an appearing/disappearing address bar. 
 
-    - On iPhone XR, the background image (instead of jumping) creates white spaces when the address bar appears/dissapears. 
+    - On iPhone XR, the background image (instead of jumping) creates white spaces when the address bar appears/disappears. 
     
       <img src="static/images/bugs/background-image-bug.jpg" alt="Background image bug on physically tested mobile devices." width="200px" height="auto">
       
-      Secondly, the background image on *All Recipes* and *Profile* pages is stretched out taking all the page lenth which makes the image have poor resolution. In Chrome DevTools mobile simulations, the background image is fixed while scrolling and takes the height of the view port.
+      Secondly, the background image on *All Recipes* and *Profile* pages is stretched out taking all the page length which makes the image have poor resolution. In Chrome DevTools mobile simulations, the background image is fixed while scrolling and takes the height of the view port.
 
 3. The fallback image for recipes cards takes a few seconds to load.
         
@@ -396,7 +396,7 @@ Click [Here](https://docs.github.com/en/github/creating-cloning-and-archiving-re
 3. Set up connection to Github Repository:
 
     - Click the *Deploy* tab and select *GitHub-Connect to GitHub* in the *Deployment method* section.
-    - A prompt to find a github repository to connect to will then be displayed.
+    - A prompt to find a Github repository to connect to will then be displayed.
     - Enter the repository name and click search.
     - Once the repository name has been found, click *Connect*.
 
@@ -472,6 +472,8 @@ Click [Here](https://docs.github.com/en/github/creating-cloning-and-archiving-re
 - The present README file was written following the [template](https://github.com/Code-Institute-Solutions/SampleREADME) provided by Code Institute. Some parts (like Deployment section) were copied and pasted as they describe exactly the same procedure that was employed for the realization of this project.
 
 ### Code
+
+- The code was written following the Code Institute tutorials.
 
 - The code for handling error 404 was taken from [Flask documentation](https://flask.palletsprojects.com/en/1.1.x/patterns/errorpages/).
 
