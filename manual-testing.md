@@ -71,7 +71,7 @@ Functionality, Usability and Responsiveness of the key website elements were tes
       - there are no *Edit Recipe* and *Delete Recipe* buttons,
       - when clicking the recipe card, the recipe data is displayed, all data fields are properly displayed.
         
-        img src="static/images/testing/all-recipes-page-for-not-registered-users.jpg" alt="All recipes page displayed for not registered users." width="700px" height="auto">
+        <img src="static/images/testing/all-recipes-page-for-not-registered-users.jpg" alt="All recipes page displayed for not registered users." width="700px" height="auto">
 
   - For registered users (logged in):
       - all recipes are displayed (from all users),
