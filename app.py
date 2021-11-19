@@ -163,7 +163,7 @@ def edit_recipe(recipe_id):
         return redirect(url_for("login"))
     recipe = mongo.db.recipes.find_one({"_id": ObjectId(recipe_id)})
     if not recipe:
-        return render_template("404.html"), 404
+        return redirect("404.html"), 404
     if recipe["created_by"] != session["user"]:
         return redirect("500.html"), 500
     if request.method == "POST":
@@ -194,9 +194,9 @@ def delete_recipe(recipe_id):
         return redirect(url_for("login"))
     recipe = mongo.db.recipes.find_one({"_id": ObjectId(recipe_id)})
     if not recipe:
-        return render_template("404.html"), 404
+        return redirect("404.html"), 404
     if recipe["created_by"] != session["user"]:
-        return render_template("index.html")
+        return redirect("index.html")
     mongo.db.recipes.remove({"_id": ObjectId(recipe_id)})
     flash("Recipe Successfully Deleted")
     return redirect(url_for("profile", username=session["user"]))
