@@ -189,6 +189,10 @@ The website is designed to be responsive and accessible on a range of devices, m
 
     PEP8 online was used to check a code for PEP8 requirements.
 
+24. [Black Playground](https://black.vercel.app/)
+
+    Black Playground was used to format the Python code.
+
 ## Testing
 
 The W3C Markup Validator, W3C CSS Validator, JSHint and PEP8 Online services were used to validate HTML, CSS, JS and Python code, respectively, to ensure no syntax error.
