@@ -197,7 +197,7 @@ The website is designed to be responsive and accessible on a range of devices, m
 
 The W3C Markup Validator, W3C CSS Validator, JSHint and PEP8 Online services were used to validate HTML, CSS, JS and Python code, respectively, to ensure no syntax error.
 
-- [W3C Markup Validator](https://validator.w3.org/) did not detect any problem in the HTML code on *Home*, *All Recipes", *Log In* and *Register* pages:
+- [W3C Markup Validator](https://validator.w3.org/) did not detect any problem in the HTML code on *Home*, *All Recipes*, *Log In* and *Register* pages:
 
   <img src="static/images/testing/w3c-markup-validator.jpg" alt="Results in W3C Markup Validator." width="500px" height="auto">
 
