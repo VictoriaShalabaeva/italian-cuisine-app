@@ -45,7 +45,7 @@ main {
 }
 
 @media screen and (max-width: 500px) {
-    .flashes {
+    .flashes h4 {
         font-size: 20px;
     }
 }
