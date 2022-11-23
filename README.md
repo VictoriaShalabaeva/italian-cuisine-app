@@ -195,7 +195,7 @@ The website is designed to be responsive and accessible on a range of devices, m
 
 25. [Render:](https://render.com/)
 
-   After Heroku has ended their free tier offerings for deployment, the present project was migrated to a different free service on an alternative platform Render.
+    After Heroku has ended their free tier offerings for deployment, the present project was migrated to a different free service on an alternative platform Render.
 
 ## Testing
 
