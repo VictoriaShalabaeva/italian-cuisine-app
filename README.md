@@ -1,6 +1,6 @@
 # Buon Appetito Website
 
-View the live project [Here](https://italian-cuisine-app.herokuapp.com/)
+View the live project [Here](https://italian-cuisine-app.onrender.com)
 
 *Buon Appetito* is an interactive website that allows to collect and share recipes of Italian cuisine meal.
 
@@ -192,6 +192,10 @@ The website is designed to be responsive and accessible on a range of devices, m
 24. [Black Playground](https://black.vercel.app/)
 
     Black Playground was used to format the Python code.
+
+25. [Render:](https://render.com/)
+
+   After Heroku has ended their free tier offerings for deployment, the present project was migrated to a different free service on an alternative platform Render.
 
 ## Testing
 
@@ -409,6 +413,8 @@ Click [Here](https://docs.github.com/en/github/creating-cloning-and-archiving-re
 6. View your application:
 
     - You can view the application by clicking on the *Open app* button located at the top right corner.
+
+7. After Heroku has ended their free tier offerings for deployment, the present project was migrated to a different free service on an alternative platform [Render](https://render.com/).
 
 ## Credits
 
